@@ -2,10 +2,13 @@ cff-version: 1.2.0
 title: "LONP1 in cervical cancer — multi-resolution transcriptomic analysis (code and data)"
 message: "If you use this code or data, please cite the associated manuscript."
 authors:
-  - family-names: "[Surname]"
-    given-names: "[Given name]"
-    affiliation: "[Institution], Wenzhou, China"
+  - family-names: "Wang"
+    given-names: "Xiaona"
+    affiliation: "Department of Obstetrics and Gynecology, The Second Affiliated Hospital of Wenzhou Medical University"
+  - family-names: "Huang"
+    given-names: "Shiyuan"
+    affiliation: "Department of Neurological Rehabilitation, The Second Affiliated Hospital of Wenzhou Medical University"
 version: "1.0.0"
 date-released: "2026-08-30"
 license: MIT
-repository-code: "https://github.com/[user]/LONP1-cervical-cancer"
+repository-code: "https://github.com/HUANG19910918/LONP1-CERVICAL-CANCER"
