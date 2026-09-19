@@ -1,0 +1,25 @@
+gene,facet,"Bulk tumour (TCGA-CESC, n = 294)","Epithelium-intrinsic (scRNA pseudobulk, n = 58)",pct
+CLPP,Proteostasis,0.7182,0.4517,0.7864
+HSPA9,Proteostasis,0.2283,0.4497,0.783
+TRAP1,Proteostasis,0.4096,0.4922,0.8471
+DNAJA3,Proteostasis,0.1112,0.4712,0.8157
+PMPCB,Proteostasis,0.2181,0.4643,0.8069
+PHB1,Proteostasis,0.4005,0.4048,0.7124
+PHB2,Proteostasis,0.3905,0.2197,0.4042
+HSPE1,Proteostasis,0.2961,0.3113,0.5493
+HSPD1,Proteostasis,0.329,0.2419,0.436
+YME1L1,Proteostasis,-0.0888,0.4143,0.728
+AFG3L2,Proteostasis,0.1636,0.3829,0.676
+ATF4,UPRmt / ISR TF,0.3238,0.1624,0.3222
+ATF5,UPRmt / ISR TF,0.1375,0.4683,0.8118
+DDIT3,UPRmt / ISR TF,0.2183,0.0021,0.1553
+POLRMT,Biogenesis,0.5438,0.6188,0.969
+TFAM,Biogenesis,-0.1,0.4383,0.7651
+PPARGC1A,Biogenesis,-0.0655,0.4488,0.7814
+NRF1,Biogenesis,0.1871,0.2962,0.5232
+FIS1,Dynamics,0.315,0.506,0.8649
+OPA1,Dynamics,-0.2232,0.4726,0.8183
+DNM1L,Dynamics,-0.0199,0.3129,0.5519
+MFF,Dynamics,0.1516,0.278,0.4951
+MFN1,Dynamics,-0.2254,0.1979,0.372
+MFN2,Dynamics,-0.1263,0.0472,0.1901

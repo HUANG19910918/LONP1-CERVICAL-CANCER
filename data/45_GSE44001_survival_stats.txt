@@ -1,0 +1,7 @@
+GSE44001: n=300 with DFS, events=38; LONP1 log2 median=9.51 range=6.58-11.22; stages: {'IB1': 217, 'IIA': 42, 'IB2': 28, 'IA2': 13}
+Univariate Cox DFS (per log2 unit): HR=1.07 (95% CI 0.72-1.60), p=0.727
+  per-SD HR=1.06 (SD=0.86)
+Median split (cutoff 9.51; High n=150, Low n=150): log-rank p=0.828
+Multivariable (n=300, events=38) LONP1_log2: HR=1.03 (0.70-1.52) p=0.875
+Multivariable (n=300, events=38) stage_adv: HR=1.96 (0.96-3.98) p=0.063
+Multivariable (n=300, events=38) diameter_cm: HR=1.29 (1.10-1.52) p=0.002

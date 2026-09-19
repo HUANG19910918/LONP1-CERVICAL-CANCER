@@ -1,0 +1,264 @@
+Full manuscript number check (261 items): 0 mismatches
+
+All checked items:
+  OK  n tumor: 304.0 vs 304
+  OK  n normal: 13.0 vs 13
+  OK  mean T: 5.60165 vs 5.6
+  OK  sd T: 0.5911 vs 0.59
+  OK  mean N: 5.13269 vs 5.13
+  OK  sd N: 0.33226 vs 0.33
+  OK  log2FC: 0.46896 vs 0.47
+  OK  fold: 1.38411 vs 1.4
+  OK  Welch t: 4.77594 vs 4.78
+  OK  Welch p: -3.64554 vs -3.638272163982407
+  OK  MWU p: -3.1455 vs -3.1426675035687315
+  OK  GSE9750 n cancer: 31.0 vs 31
+  OK  GSE9750 n normal: 24.0 vs 24
+  OK  GSE9750 fold: 1.9314 vs 1.9
+  OK  GSE9750 p: -4.63965 vs -4.638272163982407
+  OK  GSE7803 n: 38.0 vs 38
+  OK  GSE7803 p: 0.05189 vs 0.052
+  OK  GSE63514 n cancer: 28.0 vs 28
+  OK  GSE63514 n normal: 24.0 vs 24
+  OK  GSE63514 p: 0.97803 vs 0.98
+  OK  GSE63514 KW p: 0.34814 vs 0.35
+  OK  GSE63514 CIN1 n: 14.0 vs 14
+  OK  CIN2 n: 22.0 vs 22
+  OK  CIN3 n: 40.0 vs 40
+  OK  pancancer types: 32.0 vs 32
+  OK  CESC padj: -3.12846 vs -3.1307682802690238
+  OK  OV direction (tumor<normal): 1.0 vs 1
+  OK  cells: 80435.0 vs 80435
+  OK  epithelial n: 20363.0 vs 20363
+  OK  T_NK n: 32027.0 vs 32027
+  OK  Myeloid n: 13136.0 vs 13136
+  OK  n cell types: 9.0 vs 9
+  OK  epi mean: 0.14253 vs 0.143
+  OK  epi pct pos: 24.90301 vs 24.9
+  OK  T_NK mean: 0.06075 vs 0.061
+  OK  Myeloid mean: 0.06471 vs 0.065
+  OK  min non-epi mean: 0.04983 vs 0.05
+  OK  max non-epi mean: 0.12692 vs 0.127
+  OK  epi cancer: 0.1132 vs 0.113
+  OK  epi HPVneg: 0.13169 vs 0.132
+  OK  epi HPVpos: 0.14231 vs 0.142
+  OK  epi HSIL: 0.19629 vs 0.196
+  OK  epi normal pooled (abstract v3 0.136): 0.13643 vs 0.136
+  OK  epi cancer vs normal MWU: -15.99828 vs -16.0
+  OK  epi KW stages: -22.47763 vs -22.481486060122112
+  OK  pseudobulk cancer lowest 3: 1.0 vs 1
+  OK  pseudobulk MWU p (cancer vs 4 normal): 0.05714 vs 0.057
+  OK  epi score normal: -1.98853 vs -1.99
+  OK  epi score tumor: 0.08504 vs 0.09
+  OK  beta unadj: 0.46896 vs 0.47
+  OK  p unadj: 0.00483 vs 0.005
+  OK  beta adj: 0.33226 vs 0.33
+  OK  p adj: 0.14924 vs 0.15
+  OK  collinearity rho: 0.33115 vs 0.33
+  OK  CNA n: 290.0 vs 290
+  OK  CNA rho: 0.41078 vs 0.41
+  OK  CNA p: -12.50699 vs -12.508638306165727
+  OK  GISTIC -1 mean: 10.68047 vs 10.68
+  OK  GISTIC -1 n: 94.0 vs 94
+  OK  GISTIC 0 mean: 11.02418 vs 11.02
+  OK  GISTIC 0 n: 159.0 vs 159
+  OK  GISTIC 1 mean: 11.44883 vs 11.45
+  OK  GISTIC 2 mean: 11.41593 vs 11.42
+  OK  GISTIC 1+2 n: 31.0 vs 31
+  OK  GISTIC KW p: -7.97751 vs -7.958607314841775
+  OK  adeno n: 43.0 vs 43
+  OK  squam n: 229.0 vs 229
+  OK  adeno mean: 11.11859 vs 11.12
+  OK  adeno sd: 0.52697 vs 0.53
+  OK  squam mean: 10.90811 vs 10.91
+  OK  squam sd: 0.59141 vs 0.59
+  OK  subtype p: 0.0216 vs 0.022
+  OK  T stage KW p: 0.49337 vs 0.49
+  OK  N MWU p: 0.99882 vs 0.999
+  OK  OS HR: 0.84305 vs 0.84
+  OK  OS lo: 0.5409 vs 0.54
+  OK  OS hi: 1.31398 vs 1.31
+  OK  OS p: 0.45085 vs 0.45
+  OK  DSS HR: 0.98567 vs 0.99
+  OK  DSS lo: 0.5922 vs 0.59
+  OK  DSS hi: 1.64059 vs 1.64
+  OK  DSS p: 0.95573 vs 0.96
+  OK  PFS HR: 0.85216 vs 0.85
+  OK  PFS lo: 0.55026 vs 0.55
+  OK  PFS hi: 1.31967 vs 1.32
+  OK  PFS p: 0.47341 vs 0.47
+  OK  OS n: 281.0 vs 281
+  OK  OS ev: 68.0 vs 68
+  OK  DSS n: 277.0 vs 277
+  OK  DSS ev: 51.0 vs 51
+  OK  OS logrank p: 0.42883 vs 0.43
+  OK  MV LONP1 HR: 0.98354 vs 0.98
+  OK  MV LONP1 lo: 0.53563 vs 0.54
+  OK  MV LONP1 hi: 1.80601 vs 1.81
+  OK  MV LONP1 p: 0.95731 vs 0.96
+  OK  MV N1 HR: 2.91016 vs 2.91
+  OK  MV N1 lo: 1.40115 vs 1.4
+  OK  MV N1 hi: 6.04433 vs 6.04
+  OK  MV N1 p: 0.00418 vs 0.004
+  OK  M1 rho: -0.22132 vs -0.22
+  OK  M1 FDR: 0.00118 vs 0.0012
+  OK  DC rho: -0.21711 vs -0.22
+  OK  DC FDR: 0.00118 vs 0.0012
+  OK  CD4 rho: -0.15858 vs -0.16
+  OK  CD4 FDR: 0.0281 vs 0.028
+  OK  n sig significant: 3.0 vs 3
+  OK  CD274 rho: -0.1713 vs -0.17
+  OK  CD274 padj: 0.0225 vs 0.023
+  OK  max |rho| checkpoint: 0.1713 vs 0.17
+  OK  n checkpoint significant: 1.0 vs 1
+  OK  genes: 17378.0 vs 17378
+  OK  |rho|>=0.3: 970.0 vs 970
+  OK  pos: 628.0 vs 628
+  OK  neg: 342.0 vs 342
+  OK  top20 19p: 18.0 vs 18
+  OK  top50 19p: 35.0 vs 35
+  OK  bulk rho CLPP: 0.71822 vs 0.72
+  OK  bulk rho THOP1: 0.68479 vs 0.68
+  OK  bulk rho HDGFL2: 0.67296 vs 0.67
+  OK  bulk rho WDR18: 0.66972 vs 0.67
+  OK  bulk rho SGTA: 0.63568 vs 0.64
+  OK  bulk rho NDUFA11: 0.61414 vs 0.61
+  OK  bulk rho TIMM13: 0.59673 vs 0.6
+  OK  bulk rho TRAP1: 0.4096 vs 0.41
+  OK  bulk rho HSPD1: 0.329 vs 0.33
+  OK  bulk rho HSPE1: 0.29614 vs 0.3
+  OK  bulk rho HSPA9: 0.22829 vs 0.23
+  OK  bulk rho PHB1: 0.40049 vs 0.4
+  OK  bulk rho PHB2: 0.39051 vs 0.39
+  OK  bulk rho PMPCB: 0.21812 vs 0.22
+  OK  bulk rho ATF4: 0.32385 vs 0.32
+  OK  bulk rho DDIT3: 0.21825 vs 0.22
+  OK  bulk rho ATF5: 0.1375 vs 0.14
+  OK  bulk rho FIS1: 0.315 vs 0.32
+  OK  bulk rho MFF: 0.15156 vs 0.15
+  OK  bulk rho MFN1: -0.22539 vs -0.23
+  OK  bulk rho OPA1: -0.22318 vs -0.22
+  OK  bulk rho MFN2: -0.12633 vs -0.13
+  OK  bulk rho DNM1L: -0.01995 vs -0.02
+  OK  ATF5 p: 0.01833 vs 0.018
+  OK  TRAP1 p: -12.59495 vs -12.602059991327963
+  OK  19p13.3 n: 188.0 vs 188
+  OK  annotated n: 17324.0 vs 17324
+  OK  bg frac %: 1.0852 vs 1.1
+  OK  rho>=0.4 n: 164.0 vs 164
+  OK  19p in sel: 62.0 vs 62
+  OK  OR: 82.1746 vs 82
+  OK  Fisher p: -80.97745 vs -80.95860731484177
+  OK  19p frac>=0.3 %: 43.61702 vs 44
+  OK  others frac>=0.3 %: 3.18627 vs 3.2
+  OK  median 19p13.3: 0.23612 vs 0.24
+  OK  median 19p: 0.15107 vs 0.15
+  OK  median 19q: -0.00853 vs -0.01
+  OK  median rest genome: -0.03181 vs -0.03
+  OK  excl input n: 102.0 vs 102
+  OK  neg input n: 96.0 vs 96
+  OK  excl Mitochondrial Membrane: -11.63347 vs -11.638272163982407
+  OK  excl Mitochondrial Inner Me: -11.63347 vs -11.638272163982407
+  OK  excl Mitochondrial Matrix: -2.23212 vs -2.2291479883578558
+  OK  excl Mitochondrial Ribosome: -2.59057 vs -2.5850266520291822
+  OK  excl Translation (: -11.62912 vs -11.638272163982407
+  OK  excl Cytoplasmic Translatio: -5.44046 vs -5.443697499232713
+  OK  excl Mitochondrial Translat: -4.07336 vs -4.075720713938118
+  OK  excl Mitochondrial Gene Exp: -3.99333 vs -4.0
+  OK  excl Aerobic Respiration: -3.06133 vs -3.0604807473813813
+  OK  excl Cellular Respiration: -2.34249 vs -2.3467874862246565
+  OK  excl Ribosome: -7.48323 vs -7.481486060122113
+  OK  excl Oxidative phosphorylat: -1.11853 vs -1.1191864077192086
+  OK  all OXPHOS padj: -2.98257 vs -3.0
+  OK  all OXPHOS n: 8.0 vs 8
+  OK  OXPHOS 4 named genes on 19p13.3 & rho>=0.4: 4.0 vs 4
+  OK  neg Ras padj: -3.52435 vs -3.5228787452803374
+  OK  epi genes: 14140.0 vs 14140
+  OK  epi median: 0.281 vs 0.28
+  OK  epi q1: 0.10416 vs 0.1
+  OK  epi q3: 0.42896 vs 0.43
+  OK  epi 19p median: 0.25857 vs 0.26
+  OK  epi other median: 0.28118 vs 0.28
+  OK  epi rho TRAP1: 0.4922 vs 0.49
+  OK  epi pct TRAP1: 84.70651 vs 85
+  OK  epi rho DNAJA3: 0.47116 vs 0.47
+  OK  epi pct DNAJA3: 81.56648 vs 82
+  OK  epi rho PMPCB: 0.46433 vs 0.46
+  OK  epi pct PMPCB: 80.68953 vs 81
+  OK  epi rho CLPP: 0.45172 vs 0.45
+  OK  epi pct CLPP: 78.63508 vs 79
+  OK  epi rho HSPA9: 0.44969 vs 0.45
+  OK  epi pct HSPA9: 78.29562 vs 78
+  OK  epi rho PHB: 0.40484 vs 0.41
+  OK  epi pct PHB: 71.23762 vs 71
+  OK  epi rho YME1L1: 0.41425 vs 0.41
+  OK  epi pct YME1L1: 72.80057 vs 73
+  OK  epi rho HSPD1: 0.24193 vs 0.24
+  OK  epi pct HSPD1: 43.59972 vs 44
+  OK  epi rho HSPE1: 0.31133 vs 0.31
+  OK  epi pct HSPE1: 54.92928 vs 55
+  OK  epi rho PHB2: 0.21966 vs 0.22
+  OK  epi pct PHB2: 40.42433 vs 40
+  OK  epi rho ATF5: 0.46833 vs 0.47
+  OK  epi pct ATF5: 81.18105 vs 81
+  OK  epi rho ATF4: 0.16245 vs 0.16
+  OK  epi pct ATF4: 32.22065 vs 32
+  OK  epi rho DDIT3: 0.00212 vs 0.0
+  OK  epi pct DDIT3: 15.53041 vs 16
+  OK  epi rho POLRMT: 0.61879 vs 0.62
+  OK  epi pct POLRMT: 96.89533 vs 97
+  OK  epi rho PPARGC1A: 0.44881 vs 0.45
+  OK  epi rho TFAM: 0.43831 vs 0.44
+  OK  epi rho FIS1: 0.50598 vs 0.51
+  OK  epi rho OPA1: 0.47258 vs 0.47
+  OK  epi rho DNM1L: 0.31287 vs 0.31
+  OK  epi rho MFF: 0.27805 vs 0.28
+  OK  epi rho MFN1: 0.19795 vs 0.2
+  OK  epi rho MFN2: 0.04722 vs 0.05
+  OK  epi pct THOP1: 42.5884 vs 43
+  OK  epi pct TIMM13: 39.19731 vs 39
+  OK  epi complex assembly: -7.01987 vs -7.017728766960432
+  OK  epi mito membrane: -4.18739 vs -4.187086643357144
+  OK  epi inner membrane: -2.12114 vs -2.1191864077192086
+  OK  epi KEGG none: 1.0 vs 1
+  OK  cen inner membrane: -3.7792 vs -3.769551078621726
+  OK  cen complex assembly: -4.85746 vs -4.853871964321762
+  OK  bulk-epi agreement: 0.26084 vs 0.26
+  OK  agreement n: 13385.0 vs 13385
+  OK  units: 58.0 vs 58
+  OK  bulk q1: -0.12685 vs -0.13
+  OK  bulk q3: 0.08085 vs 0.08
+  OK  purity n: 291.0 vs 291
+  OK  purity rho: 0.11763 vs 0.12
+  OK  purity p: 0.04496 vs 0.045
+  OK  purity median: 0.67 vs 0.67
+  OK  purity q1: 0.54 vs 0.54
+  OK  purity q3: 0.785 vs 0.79
+  OK  epi~purity rho: 0.13108 vs 0.13
+  OK  epi~purity p: 0.02535 vs 0.025
+  OK  CNA partial rho: 0.44715 vs 0.45
+  OK  CNA partial p: -14.93501 vs -14.920818753952375
+  OK  OLS beta CNA: 0.96682 vs 0.97
+  OK  OLS p CNA: -18.94769 vs -18.958607314841775
+  OK  M1_sig partial rho: -0.21939 vs -0.22
+  OK  M1_sig partial p: -3.79137 vs -3.795880017344075
+  OK  DC_sig partial rho: -0.19169 vs -0.19
+  OK  DC_sig partial p: -2.99372 vs -3.0
+  OK  CD4_sig partial rho: -0.13015 vs -0.13
+  OK  CD4_sig partial p: 0.02641 vs 0.026
+  OK  DC~purity: -0.53794 vs -0.54
+  OK  CD4~purity: -0.57648 vs -0.58
+  OK  GSE44001 n: 300.0 vs 300
+  OK  GSE44001 events: 38.0 vs 38
+  OK  GSE44001 HR: 1.07399 vs 1.07
+  OK  GSE44001 lo: 0.71944 vs 0.72
+  OK  GSE44001 hi: 1.60327 vs 1.6
+  OK  GSE44001 p: 0.72696 vs 0.73
+  OK  GSE44001 logrank p: 0.82781 vs 0.83
+  OK  GSE44001 diam HR: 1.29414 vs 1.29
+  OK  diam lo: 1.09941 vs 1.1
+  OK  diam hi: 1.52335 vs 1.52
+  OK  diam p: 0.00194 vs 0.002
+  OK  MV LONP1 HR (S2 legend): 1.03175 vs 1.03
+  OK  MV stage HR: 1.95875 vs 1.96
+  OK  MV stage p: 0.06318 vs 0.063

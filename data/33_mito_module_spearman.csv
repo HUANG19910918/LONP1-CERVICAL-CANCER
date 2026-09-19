@@ -1,0 +1,30 @@
+gene,cls,rho,p,b19,sig,lab
+MFN1,Fusion,-0.22539,0.0001,False,***,MFN1
+OPA1,Fusion,-0.22318,0.00011,False,***,OPA1
+MFN2,Fusion,-0.12633,0.03034,False,*,MFN2
+TFAM,Biogenesis / mtDNA,-0.10005,0.08681,False,,TFAM
+YME1L1,Matrix protease,-0.08881,0.12869,False,,YME1L1
+PINK1,Mitophagy,-0.08502,0.14588,False,,PINK1
+PPARGC1A,Biogenesis / mtDNA,-0.06548,0.2631,False,,PPARGC1A
+DNM1L,Fission,-0.01995,0.73338,False,,DNM1L
+MIEF1,Fission,0.03661,0.53176,False,,MIEF1
+PRKN,Mitophagy,0.05338,0.36174,False,,PRKN
+SPG7,Matrix protease,0.07117,0.22371,False,,SPG7
+MIEF2,Fission,0.09901,0.09014,False,,MIEF2
+DNAJA3,Chaperone,0.11121,0.05682,False,,DNAJA3
+ATF5,UPRmt / ISR TF,0.1375,0.01833,False,*,ATF5
+MFF,Fission,0.15156,0.00925,False,**,MFF
+AFG3L2,Matrix protease,0.16355,0.00493,False,**,AFG3L2
+NRF1,Biogenesis / mtDNA,0.18709,0.00127,False,**,NRF1
+PMPCB,Matrix protease,0.21812,0.00016,False,***,PMPCB
+DDIT3,UPRmt / ISR TF,0.21825,0.00016,False,***,DDIT3
+HSPA9,Chaperone,0.22829,8e-05,False,***,HSPA9
+HSPE1,Chaperone,0.29614,0.0,False,***,HSPE1
+FIS1,Fission,0.315,0.0,False,***,FIS1
+ATF4,UPRmt / ISR TF,0.32385,0.0,False,***,ATF4
+HSPD1,Chaperone,0.329,0.0,False,***,HSPD1
+PHB2,Prohibitin scaffold,0.39051,0.0,False,***,PHB2
+PHB1,Prohibitin scaffold,0.40049,0.0,False,***,PHB1
+TRAP1,Chaperone,0.4096,0.0,False,***,TRAP1
+POLRMT,Biogenesis / mtDNA,0.5438,0.0,True,***,POLRMT (19p13.3)
+CLPP,Matrix protease,0.71822,0.0,True,***,CLPP (19p13.3)

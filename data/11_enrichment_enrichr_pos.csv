@@ -1,0 +1,37 @@
+"lib","term","p","padj","n_overlap"
+"GO_Biological_Process_2023","Translation (GO:0006412)",4.17507580345903e-16,4.36295421461469e-13,21
+"GO_Biological_Process_2023","Macromolecule Biosynthetic Process (GO:0009059)",3.49369457386457e-10,1.82545541484424e-07,14
+"GO_Biological_Process_2023","Cytoplasmic Translation (GO:0002181)",4.69566542249983e-09,1.63565678883744e-06,10
+"GO_Biological_Process_2023","Peptide Biosynthetic Process (GO:0043043)",7.22680114263706e-09,1.88800179851393e-06,12
+"GO_Biological_Process_2023","Gene Expression (GO:0010467)",2.29607839780469e-08,4.66209107461297e-06,15
+"GO_Biological_Process_2023","Aerobic Respiration (GO:0009060)",2.67679870312706e-08,4.66209107461297e-06,8
+"GO_Biological_Process_2023","rRNA Processing (GO:0006364)",1.47366177914452e-07,2.19996651315146e-05,9
+"GO_Biological_Process_2023","Mitochondrial Gene Expression (GO:0140053)",1.74646506384253e-07,2.2813199896443e-05,9
+"GO_Biological_Process_2023","Cellular Respiration (GO:0045333)",4.85043442638576e-07,5.63189330619236e-05,8
+"GO_Biological_Process_2023","rRNA Metabolic Process (GO:0016072)",8.21675797080776e-07,7.8350323996213e-05,8
+"GO_Biological_Process_2023","Oxidative Phosphorylation (GO:0006119)",8.24740252591716e-07,7.8350323996213e-05,7
+"GO_Biological_Process_2023","Mitochondrial Translation (GO:0032543)",1.44940828730972e-06,0.000126219305019888,8
+"GO_Cellular_Component_2023","Mitochondrial Inner Membrane (GO:0005743)",4.5300823974837e-16,7.02162771609973e-14,25
+"GO_Cellular_Component_2023","Organelle Inner Membrane (GO:0019866)",2.46208437845429e-15,1.90811539330207e-13,25
+"GO_Cellular_Component_2023","Mitochondrial Membrane (GO:0031966)",5.81114163035474e-15,3.00242317568328e-13,28
+"GO_Cellular_Component_2023","Nucleus (GO:0005634)",8.91728238164798e-08,3.45544692288859e-06,67
+"GO_Cellular_Component_2023","Intracellular Membrane-Bounded Organelle (GO:0043231)",1.99106935589341e-06,6.17231500326956e-05,70
+"GO_Cellular_Component_2023","Large Ribosomal Subunit (GO:0015934)",4.13315739800571e-06,9.15199138129835e-05,6
+"GO_Cellular_Component_2023","Cytosolic Large Ribosomal Subunit (GO:0022625)",4.13315739800571e-06,9.15199138129835e-05,6
+"GO_Cellular_Component_2023","Mitochondrial Matrix (GO:0005759)",7.66723422498975e-06,0.000148552663109176,13
+"GO_Cellular_Component_2023","Mitochondrial Respiratory Chain Complex I (GO:0005747)",2.05860416581805e-05,0.000290076041547088,5
+"GO_Cellular_Component_2023","Respiratory Chain Complex I (GO:0045271)",2.05860416581805e-05,0.000290076041547088,5
+"GO_Cellular_Component_2023","Cytosolic Small Ribosomal Subunit (GO:0022627)",2.05860416581805e-05,0.000290076041547088,5
+"GO_Cellular_Component_2023","Small Ribosomal Subunit (GO:0015935)",2.32139687075416e-05,0.000299847095805746,5
+"KEGG_2021_Human","Ribosome",6.21634176309705e-10,9.13802239175266e-08,13
+"KEGG_2021_Human","Oxidative phosphorylation",1.4162485041034e-05,0.001040942650516,8
+"KEGG_2021_Human","Thermogenesis",2.24404270617988e-05,0.00109958092602814,10
+"KEGG_2021_Human","Parkinson disease",4.0966184898709e-05,0.00150550729502755,10
+"KEGG_2021_Human","Coronavirus disease",0.000129937883836368,0.00382017378478922,9
+"KEGG_2021_Human","Diabetic cardiomyopathy",0.000277348675370649,0.00620054438041498,8
+"KEGG_2021_Human","Non-alcoholic fatty liver disease",0.000295264018114999,0.00620054438041498,7
+"KEGG_2021_Human","Huntington disease",0.000976578651804491,0.0179446327269075,9
+"KEGG_2021_Human","Spliceosome",0.00150156203284229,0.0245255132030907,6
+"KEGG_2021_Human","Prion disease",0.00190216510520734,0.0255537689950479,8
+"KEGG_2021_Human","Pathways of neurodegeneration",0.0019121867955478,0.0255537689950479,11
+"KEGG_2021_Human","Amyotrophic lateral sclerosis",0.00318023616971522,0.0389578930790114,9

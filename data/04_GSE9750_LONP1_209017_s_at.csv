@@ -1,0 +1,65 @@
+gsm,title,group,value_MAS5
+GSM246087,"Cervical cancer cell line, C4-I",cellline,400.9
+GSM246088,"Cervical cancer cell line, CaSki",cellline,551.7
+GSM246089,"Cervical cancer cell line, C-33A",cellline,747.1
+GSM246090,"Cervical cancer cell line, HT-3",cellline,854.9
+GSM246119,"Cervical cancer cell line, SiHa",cellline,656
+GSM246120,"Cervical cancer cell line, SW756",cellline,495.8
+GSM246121,"Cervical cancer cell line, MS751",cellline,1456.8
+GSM246122,"Cervical cancer cell line, ME-180",cellline,645
+GSM246123,"Cervical cancer cell line, HeLa",cellline,528.3
+GSM246422,"Normal cervix, commercial_Ambion",normal,249.2
+GSM246423,"Normal cervix, commercial_Stratagene",normal,244.4
+GSM246484,"Normal cervix, commercial_BioChain",normal,244.5
+GSM246485,"Normal cervix epithelium_CaCX3",normal,275.9
+GSM246486,"Normal cervix epithelium_CaCx4",normal,198.4
+GSM246487,"Normal cervix epithelium_CaCx5",normal,265.9
+GSM246488,"Normal cervix epithelium_03-3505",normal,221.3
+GSM246489,"Normal cervix epithelium_03-4216",normal,192.7
+GSM246490,"Normal cervix epithelium_03-4508",normal,194.9
+GSM246491,"Normal cervix epithelium_03-4986",normal,112.2
+GSM247162,"Normal cervix epithelium_03-5419",normal,27.2
+GSM247163,"Normal cervix epithelium_03-5438",normal,11.9
+GSM247164,"Normal cervix_03-5611",normal,109.3
+GSM247165,"Normal cervix_03-5657",normal,184.4
+GSM247166,"Normal cervix_05-15",normal,111.3
+GSM247168,"Normal cervix_05-31",normal,126.6
+GSM247169,"Normal cervix_05-446",normal,107.1
+GSM247171,"Normal cervix_05-1308",normal,176.2
+GSM247173,"Normal cervix_05-1352",normal,241.1
+GSM247174,"Normal cervix_05-1981",normal,126.7
+GSM247175,"Normal cervix_05-4602",normal,79.4
+GSM247188,"Normal cervix_05-4615",normal,102.6
+GSM247189,"Normal cervix_05-4959",normal,217.5
+GSM247190,"Normal cervix_05-5007",normal,183.9
+GSM247650,"Cervical cancer_CC126",cancer,346.4
+GSM247651,"Cervical cancer_CC128",cancer,384.2
+GSM247652,"Cervical cancer_CC140",cancer,207.3
+GSM247653,"Cervical cancer_CC163",cancer,303.6
+GSM247654,"Cervical cancer_CC205",cancer,177.8
+GSM247655,"Cervical cancer_CC207",cancer,280.4
+GSM247656,"Cervical cancer_CC214",cancer,522.7
+GSM247657,"Cervical cancer_CC218",cancer,149.2
+GSM247658,"Cervical cancer_CC222",cancer,240.9
+GSM247659,"Cervical cancer_892T",cancer,310
+GSM247660,"Cervical cancer_1721T",cancer,314.2
+GSM247661,"Cervical cancer_1798T",cancer,680.8
+GSM247662,"Cervical cancer_1875T",cancer,419.2
+GSM247857,"Cervical cancer_841T",cancer,359
+GSM247859,"Cervical cancer_1434T",cancer,347.9
+GSM247860,"Cervical cancer_1509T",cancer,647.8
+GSM247862,"Cervical cancer_1898T",cancer,349.9
+GSM247864,"Cervical cancer_1900T",cancer,248.5
+GSM247865,"Cervical cancer_1907T",cancer,393.9
+GSM247866,"Cervical cancer_2035T",cancer,464.4
+GSM247876,"Cervical cancer_20-04T",cancer,359.4
+GSM247877,"Cervical cancer_56-04T",cancer,373.6
+GSM247878,"Cervical cancer_88-04T",cancer,342.3
+GSM247879,"Cervical cancer_98-04T",cancer,411.6
+GSM247881,"Cervical cancer_103-04T",cancer,393.2
+GSM247882,"Cervical cancer_CaCx28",cancer,168
+GSM247883,"Cervical cancer_CaCx54",cancer,260
+GSM247884,"Cervical cancer_CaCx60",cancer,133.7
+GSM247885,"Cervical cancer_CaCx70",cancer,110.9
+GSM247886,"Cervical cancer_CaCx81",cancer,172.6
+GSM247887,"Cervical cancer_CaCx83",cancer,117

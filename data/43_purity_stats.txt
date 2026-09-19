@@ -1,0 +1,9 @@
+CESC samples with ABSOLUTE purity and LONP1 expression: n=291; purity median=0.67 IQR=0.54-0.79
+LONP1 ~ purity: Spearman rho=0.118 p=4.50e-02
+epithelial marker score ~ purity: rho=0.131 p=2.53e-02 (n=291)
+LONP1 ~ log2CNA: raw rho=0.411 p=3.11e-13; purity-adjusted partial rho=0.447 p=1.16e-15 (n=290)
+OLS LONP1 ~ log2CNA + purity: beta_CNA=0.967 (p=1.13e-19), beta_purity=0.526 (p=2.06e-03), R2=0.259
+M1_sig: LONP1 raw rho=-0.223 (p=1.21e-04); sig~purity rho=-0.161; purity-adjusted partial rho=-0.219 (p=1.62e-04)
+DC_sig: LONP1 raw rho=-0.218 (p=1.73e-04); sig~purity rho=-0.538; purity-adjusted partial rho=-0.192 (p=1.01e-03)
+CD4_sig: LONP1 raw rho=-0.168 (p=4.13e-03); sig~purity rho=-0.576; purity-adjusted partial rho=-0.130 (p=2.64e-02)
+LONP1 by purity tertile (mean log2): Low=10.89, Mid=10.92, High=11.06

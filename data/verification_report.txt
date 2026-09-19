@@ -1,0 +1,42 @@
+=== R verification report, 2026-08-29 21:02:01 R version 4.3.3 (2024-02-29) ===
+
+R1 TCGA+GTEx: nT=304 nN=13 meanT=5.602 meanN=5.133 log2FC=0.469
+   Welch t=4.776 df=15.5 p=2.262e-04 | MWU W=3072 p=7.153e-04
+
+R2 OS: n=281 ev=68 HR=0.843 (0.541-1.314) p=0.4508
+R2 DSS: n=277 ev=51 HR=0.986 (0.592-1.641) p=0.9557
+R2 PFS: n=281 ev=68 HR=0.852 (0.550-1.320) p=0.4734
+R2 OS median-split logrank: chi2=0.626 p=0.4288 (cutoff=10.938, High=140 Low=141)
+
+R3 mito panel Spearman (log2(RSEM+1)):
+  CLPP rho=0.718 p=0.00e+00
+  HSPD1 rho=0.329 p=7.53e-09
+  FIS1 rho=0.315 p=4.04e-08
+  HSPA9 rho=0.228 p=8.15e-05
+  NRF1 rho=0.187 p=1.29e-03
+  AFG3L2 rho=0.164 p=4.98e-03
+  MFF rho=0.152 p=9.30e-03
+  MIEF2 rho=0.099 p=9.01e-02
+  MIEF1 rho=0.037 p=5.32e-01
+  PRKN rho=0.053 p=3.62e-01
+  SPG7 rho=0.071 p=2.24e-01
+  DNM1L rho=-0.020 p=7.33e-01
+  PPARGC1A rho=-0.065 p=2.63e-01
+  PINK1 rho=-0.085 p=1.46e-01
+  TFAM rho=-0.100 p=8.68e-02
+  YME1L1 rho=-0.089 p=1.29e-01
+  MFN2 rho=-0.126 p=3.04e-02
+  MFN1 rho=-0.225 p=1.01e-04
+  OPA1 rho=-0.223 p=1.14e-04
+
+R6 CNA~expr: n=290 Spearman rho=0.411 p=3.11e-13
+  gistic  expr.n expr.mean
+1     -2   6.000    10.764
+2     -1  94.000    10.680
+3      0 159.000    11.024
+4      1  30.000    11.449
+5      2   1.000    11.416
+
+R7 Adeno(n=43, 11.119±0.527) vs Squamous(n=229, 10.908±0.591): Welch p=0.0216
+
+R8 GSE63514 Cancer(n=28) vs Normal(n=24): MWU p=0.9782
