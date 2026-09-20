@@ -1,13 +1,40 @@
-python 3.11.15 (this run); analysis first pass python 3.10
-scanpy 1.11.5 
-anndata 0.12.19 
-plotnine 0.15.8 
-pandas 2.3.3 
-numpy 2.4.4 
-scipy 1.17.1 
-matplotlib 3.10.9 
-igraph 1.0.0 
-leidenalg 0.12.0 
-lifelines 0.30.0
-R 4.3.3 (survival, ggplot2, svglite, jsonlite)
-node 22 + docx
+# Software environments for "Multi-resolution transcriptomic analysis of LONP1 in cervical cancer"
+#
+# Two environments were used. Environment A produced all analyses in the original
+# submission. Environment B produced the supplementary proportional-hazards
+# diagnostics and time-varying coefficient models (scripts 22-30, raw_data 47-53,
+# Additional file 1: Table S8, Additional file 2: Fig. S3).
+
+## Environment A - original analyses (scripts 00-21)
+python              3.11.15   (first analysis pass: 3.10)
+scanpy              1.11.5
+anndata             0.12.19
+plotnine            0.15.8
+pandas              2.3.3
+numpy               2.4.4
+scipy               1.17.1
+matplotlib          3.10.9
+igraph              1.0.0
+leidenalg           0.12.0
+lifelines           0.30.0 -> 0.30.3   # 0.30.0 for the TCGA survival analyses (lab notebook R18);
+                                      # upgraded to 0.30.3 before the purity / GSE44001 round (R19)
+statsmodels         version not recorded at run time
+                                      # used only by 19_purity_adjustment.py for OLS residuals; the
+                                      # supplementary re-analysis in Environment B reproduced the same
+                                      # purity-adjusted estimates with statsmodels 0.15.0
+R                   4.3.3      (survival, ggplot2, svglite, jsonlite)
+node                22         (+ docx)
+
+## Environment B - supplementary survival diagnostics (scripts 22-30)
+python              3.10.12
+lifelines           0.30.0
+statsmodels         0.15.0
+patsy               1.0.3
+scipy               1.15.3
+plotnine            0.15.8
+pandas              2.3.3
+numpy               2.2.6
+matplotlib          3.10.9
+
+# Packages introduced for the supplementary analyses: statsmodels (lowess smoother,
+# OLS residuals), patsy (natural cubic spline basis for the linearity check).

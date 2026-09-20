@@ -73,7 +73,7 @@ python3 scripts/18_verify_references.py refs.txt data/40_reference_check.csv
 
 ## Environment
 
-See `environment.txt`. Key versions: R 4.3.3 (survival, ggplot2, jsonlite); Python 3.10–3.11 with scanpy 1.11.5, anndata, pandas, numpy, scipy, lifelines 0.30, plotnine 0.15.8, matplotlib; Node 22 with `docx`.
+See `environment.txt`, which documents two environments: **A** for the original analyses (scripts 00–21) and **B** for the supplementary proportional-hazards diagnostics and time-varying models (scripts 22–30). Key versions: R 4.3.3 (survival, ggplot2, jsonlite); Python 3.10–3.11 with scanpy 1.11.5, anndata, pandas, numpy, scipy, statsmodels, lifelines 0.30, plotnine 0.15.8, matplotlib; Node 22 with `docx`.
 
 ## Notes on reproducibility
 
