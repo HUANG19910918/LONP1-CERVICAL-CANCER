@@ -1,6 +1,8 @@
 import os, sys
 import numpy as np, pandas as pd
 rd = sys.argv[1]
+if os.path.isdir(os.path.join(rd, "raw_data")):   # 允许传入分析根目录或 raw_data 目录
+    rd = os.path.join(rd, "raw_data")
 d2 = pd.read_csv(os.path.join(rd,"02_TCGA_CESC_clinical_LONP1_survival.csv"))
 L=[]
 def P(s): print(s,flush=True); L.append(str(s))

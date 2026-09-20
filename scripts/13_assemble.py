@@ -4,7 +4,11 @@ import sys, os
 from PIL import Image, ImageDraw, ImageFont
 
 base = sys.argv[1]
-figroot = os.path.join(base, "figures"); fig = os.path.join(figroot, "子图原文件")  # 散panel源目录（2026-08-31起）
+figroot = os.path.join(base, "figures")
+# 散panel源目录：2026-09 目录重组后移到 【1】图片源文件/(1) 子图原文件，保留旧路径作回退
+fig = os.path.join(figroot, "【1】图片源文件", "(1) 子图原文件")
+if not os.path.isdir(fig):
+    fig = os.path.join(figroot, "子图原文件")
 out = os.path.join(figroot, "composite")
 os.makedirs(out, exist_ok=True)
 W = 2160  # 7.2in * 300dpi
@@ -61,6 +65,10 @@ LAYOUTS = {
  ],
  "FigureS2": [   # 补充图S2：GSE44001 外部生存队列（scripts/20）
    [("FigS2_GSE44001_KM.png", 0.55, "")],
+ ],
+ "FigureS3": [   # 补充图S3：比例风险假设诊断与时变系数模型（scripts/27）
+   [("FigS3A_schoenfeld.png", 1.0, "A")],
+   [("FigS3B_HR_over_time.png", 1.0, "B")],
  ],
 }
 

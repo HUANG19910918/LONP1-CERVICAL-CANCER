@@ -6,6 +6,8 @@ from lifelines.statistics import proportional_hazard_test
 from lifelines.utils import to_episodic_format
 from scipy.stats import chi2 as chi2d
 rd = sys.argv[1]
+if os.path.isdir(os.path.join(rd, "raw_data")):   # 允许传入分析根目录或 raw_data 目录
+    rd = os.path.join(rd, "raw_data")
 L=[]
 def P(s): print(s,flush=True); L.append(str(s))
 d = pd.read_csv(os.path.join(rd,"44_GSE44001_LONP1_DFS.csv"))

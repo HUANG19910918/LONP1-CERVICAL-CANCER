@@ -6,6 +6,8 @@ from lifelines.utils import to_episodic_format
 from scipy.stats import chi2 as chi2d
 
 rd = sys.argv[1]
+if os.path.isdir(os.path.join(rd, "raw_data")):   # 允许传入分析根目录或 raw_data 目录
+    rd = os.path.join(rd, "raw_data")
 d2 = pd.read_csv(os.path.join(rd, "02_TCGA_CESC_clinical_LONP1_survival.csv"))
 L = []
 def P(s): print(s, flush=True); L.append(str(s))
@@ -14,19 +16,22 @@ P("STEP 2 (corrected): time-varying coefficient models with centred covariates")
 P("NOTE: a first attempt used uncentred LONP1 x log(t). LONP1 (log2 RSEM, mean ~10.6)")
 P("      is almost perfectly collinear with its own interaction, producing unstable")
 P("      coefficients (HR(3mo)=160). Centring both terms fixes this.")
+P("Values here match Additional file 1 Table S8 (raw_data/52, script 28) exactly.")
 P("")
 
 def prep(tk, ek):
     x = d2.dropna(subset=[tk, ek]); x = x[x[tk] > 0].copy()
     return x[[tk, ek, "LONP1_log2RSEM"]].reset_index(drop=True)
 
+# 中心化改用各分析子集自身的均值，与 27/28 号脚本一致（此前用全局均值，拟合到第3位小数有微小差异）
 MEAN_LON = d2.LONP1_log2RSEM.mean()
-P(f"LONP1_log2RSEM: mean={MEAN_LON:.3f}, sd={d2.LONP1_log2RSEM.std():.3f}, range {d2.LONP1_log2RSEM.min():.2f}-{d2.LONP1_log2RSEM.max():.2f}")
+P(f"LONP1_log2RSEM (全体): mean={MEAN_LON:.3f}, sd={d2.LONP1_log2RSEM.std():.3f}, range {d2.LONP1_log2RSEM.min():.2f}-{d2.LONP1_log2RSEM.max():.2f}")
+P("中心化：每个分析子集减去其自身的 LONP1 均值")
 P("")
 
 for tk, ek, lab in [("OS_months","OS_event","OS"), ("PFS_months","PFS_event","PFS"), ("DSS_months","DSS_event","DSS")]:
     df = prep(tk, ek)
-    df["lon_c"] = df.LONP1_log2RSEM - MEAN_LON
+    df["lon_c"] = df.LONP1_log2RSEM - df.LONP1_log2RSEM.mean()
     cf0 = CoxPHFitter().fit(df[[tk, ek, "lon_c"]], tk, ek)
     s0 = cf0.summary.loc["lon_c"]
     P(f"=== {lab}  (n={len(df)}, events={int(df[ek].sum())}) ===")
@@ -75,7 +80,7 @@ for tk, ek, lab in [("OS_months","OS_event","OS"), ("PFS_months","PFS_event","PF
 P("Linearity of LONP1 on the log-hazard scale (linear vs natural cubic spline):")
 from patsy import dmatrix
 for tk, ek, lab in [("OS_months","OS_event","OS"), ("PFS_months","PFS_event","PFS"), ("DSS_months","DSS_event","DSS")]:
-    df = prep(tk, ek); df["lon_c"] = df.LONP1_log2RSEM - MEAN_LON
+    df = prep(tk, ek); df["lon_c"] = df.LONP1_log2RSEM - df.LONP1_log2RSEM.mean()
     ll_lin = CoxPHFitter().fit(df[[tk, ek, "lon_c"]], tk, ek).log_likelihood_
     B = dmatrix("cr(x, df=4)", {"x": df["lon_c"].values}, return_type="dataframe").iloc[:, 1:]
     B = B.loc[:, B.std() > 1e-8]
