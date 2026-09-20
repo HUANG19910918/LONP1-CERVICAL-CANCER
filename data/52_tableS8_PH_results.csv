@@ -1,0 +1,69 @@
+analysis,cohort,endpoint,model,term,time_months,estimate,lower_95CI,upper_95CI,p_value,n,events,n_at_risk,cumulative_events
+Proportional-hazards (PH) model,TCGA-CESC,Overall survival,"Univariate Cox, LONP1 continuous",LONP1 (per log2 unit),,0.843,0.541,1.314,0.4508,281,68,,
+Schoenfeld residual test of PH,TCGA-CESC,Overall survival,"Univariate Cox, rank time transform",LONP1 (per log2 unit),,5.338,,,0.0209,281,68,,
+Schoenfeld residual test of PH,TCGA-CESC,Overall survival,"Univariate Cox, km time transform",LONP1 (per log2 unit),,3.92,,,0.0477,281,68,,
+Time-varying coefficient model,TCGA-CESC,Overall survival,"log HR(t) = b0 + b1 x (log t - c), c = 2.930 (t = 18.7 months)",b1 (LONP1 x log time): test of time-dependence,,-0.537,,,0.0131,281,68,,
+Time-varying coefficient model,TCGA-CESC,Overall survival,Fitted hazard ratio at time t,LONP1 (per log2 unit),6,1.549,0.819,2.932,,281,68,239,9
+Time-varying coefficient model,TCGA-CESC,Overall survival,Fitted hazard ratio at time t,LONP1 (per log2 unit),12,1.068,0.671,1.699,,281,68,219,19
+Time-varying coefficient model,TCGA-CESC,Overall survival,Fitted hazard ratio at time t,LONP1 (per log2 unit),24,0.736,0.472,1.148,,281,68,135,41
+Time-varying coefficient model,TCGA-CESC,Overall survival,Fitted hazard ratio at time t,LONP1 (per log2 unit),36,0.592,0.353,0.992,,281,68,88,52
+Time-varying coefficient model,TCGA-CESC,Overall survival,Fitted hazard ratio at time t,LONP1 (per log2 unit),60,0.45,0.232,0.872,,281,68,41,59
+Piecewise model (sensitivity analysis),TCGA-CESC,Overall survival,Split at median event time (19.9 months),"LONP1, t <= 19.9 months",,1.238,0.667,2.298,0.4994,281,34,,
+Piecewise model (sensitivity analysis),TCGA-CESC,Overall survival,Split at median event time (19.9 months),"LONP1, t > 19.9 months",,0.58,0.314,1.07,0.0811,281,34,,
+Linearity of LONP1 on the log-hazard scale,TCGA-CESC,Overall survival,"Likelihood-ratio test, linear vs natural cubic spline (4 df)",LONP1 (per log2 unit),,0.688,,,0.876,281,68,,
+Proportional-hazards (PH) model,TCGA-CESC,Disease-specific survival,"Univariate Cox, LONP1 continuous",LONP1 (per log2 unit),,0.986,0.592,1.641,0.9558,277,51,,
+Schoenfeld residual test of PH,TCGA-CESC,Disease-specific survival,"Univariate Cox, rank time transform",LONP1 (per log2 unit),,2.816,,,0.0933,277,51,,
+Schoenfeld residual test of PH,TCGA-CESC,Disease-specific survival,"Univariate Cox, km time transform",LONP1 (per log2 unit),,2.587,,,0.1077,277,51,,
+Time-varying coefficient model,TCGA-CESC,Disease-specific survival,"log HR(t) = b0 + b1 x (log t - c), c = 2.790 (t = 16.3 months)",b1 (LONP1 x log time): test of time-dependence,,-0.4947,,,0.0897,277,51,,
+Time-varying coefficient model,TCGA-CESC,Disease-specific survival,Fitted hazard ratio at time t,LONP1 (per log2 unit),6,1.615,0.764,3.417,,277,51,235,8
+Time-varying coefficient model,TCGA-CESC,Disease-specific survival,Fitted hazard ratio at time t,LONP1 (per log2 unit),12,1.146,0.68,1.932,,277,51,215,16
+Time-varying coefficient model,TCGA-CESC,Disease-specific survival,Fitted hazard ratio at time t,LONP1 (per log2 unit),24,0.814,0.472,1.404,,277,51,132,35
+Time-varying coefficient model,TCGA-CESC,Disease-specific survival,Fitted hazard ratio at time t,LONP1 (per log2 unit),36,0.666,0.338,1.309,,277,51,87,43
+Time-varying coefficient model,TCGA-CESC,Disease-specific survival,Fitted hazard ratio at time t,LONP1 (per log2 unit),60,0.517,0.21,1.273,,277,51,40,47
+Piecewise model (sensitivity analysis),TCGA-CESC,Disease-specific survival,Split at median event time (17.9 months),"LONP1, t <= 17.9 months",,1.371,0.683,2.75,0.3745,277,26,,
+Piecewise model (sensitivity analysis),TCGA-CESC,Disease-specific survival,Split at median event time (17.9 months),"LONP1, t > 17.9 months",,0.696,0.339,1.43,0.3244,277,25,,
+Linearity of LONP1 on the log-hazard scale,TCGA-CESC,Disease-specific survival,"Likelihood-ratio test, linear vs natural cubic spline (4 df)",LONP1 (per log2 unit),,1.111,,,0.7745,277,51,,
+Proportional-hazards (PH) model,TCGA-CESC,Progression-free survival,"Univariate Cox, LONP1 continuous",LONP1 (per log2 unit),,0.852,0.55,1.32,0.4734,281,68,,
+Schoenfeld residual test of PH,TCGA-CESC,Progression-free survival,"Univariate Cox, rank time transform",LONP1 (per log2 unit),,8.236,,,0.0041,281,68,,
+Schoenfeld residual test of PH,TCGA-CESC,Progression-free survival,"Univariate Cox, km time transform",LONP1 (per log2 unit),,7.798,,,0.0052,281,68,,
+Time-varying coefficient model,TCGA-CESC,Progression-free survival,"log HR(t) = b0 + b1 x (log t - c), c = 2.455 (t = 11.6 months)",b1 (LONP1 x log time): test of time-dependence,,-0.7621,,,0.0065,281,68,,
+Time-varying coefficient model,TCGA-CESC,Progression-free survival,Fitted hazard ratio at time t,LONP1 (per log2 unit),6,1.419,0.816,2.467,,281,68,234,13
+Time-varying coefficient model,TCGA-CESC,Progression-free survival,Fitted hazard ratio at time t,LONP1 (per log2 unit),12,0.837,0.544,1.286,,281,68,207,29
+Time-varying coefficient model,TCGA-CESC,Progression-free survival,Fitted hazard ratio at time t,LONP1 (per log2 unit),24,0.493,0.272,0.894,,281,68,116,59
+Time-varying coefficient model,TCGA-CESC,Progression-free survival,Fitted hazard ratio at time t,LONP1 (per log2 unit),36,0.362,0.168,0.779,,281,68,79,64
+Time-varying coefficient model,TCGA-CESC,Progression-free survival,Fitted hazard ratio at time t,LONP1 (per log2 unit),60,0.245,0.089,0.674,,281,68,36,67
+Piecewise model (sensitivity analysis),TCGA-CESC,Progression-free survival,Split at median event time (13.6 months),"LONP1, t <= 13.6 months",,1.445,0.791,2.638,0.2311,281,34,,
+Piecewise model (sensitivity analysis),TCGA-CESC,Progression-free survival,Split at median event time (13.6 months),"LONP1, t > 13.6 months",,0.504,0.272,0.936,0.0299,281,34,,
+Linearity of LONP1 on the log-hazard scale,TCGA-CESC,Progression-free survival,"Likelihood-ratio test, linear vs natural cubic spline (4 df)",LONP1 (per log2 unit),,0.479,,,0.9236,281,68,,
+Proportional-hazards (PH) model,GSE44001,Disease-free survival,"Univariate Cox, LONP1 continuous",LONP1 (per log2 unit),,1.074,0.719,1.603,0.727,300,38,,
+Schoenfeld residual test of PH,GSE44001,Disease-free survival,"Univariate Cox, rank time transform",LONP1 (per log2 unit),,0.098,,,0.7547,300,38,,
+Schoenfeld residual test of PH,GSE44001,Disease-free survival,"Univariate Cox, km time transform",LONP1 (per log2 unit),,0.022,,,0.8832,300,38,,
+Time-varying coefficient model,GSE44001,Disease-free survival,"log HR(t) = b0 + b1 x (log t - c), c = 2.984 (t = 19.8 months)",b1 (LONP1 x log time): test of time-dependence,,0.1467,,,0.5629,300,38,,
+Time-varying coefficient model,GSE44001,Disease-free survival,Fitted hazard ratio at time t,LONP1 (per log2 unit),6,0.907,0.458,1.798,,300,38,290,2
+Time-varying coefficient model,GSE44001,Disease-free survival,Fitted hazard ratio at time t,LONP1 (per log2 unit),12,1.004,0.639,1.579,,300,38,274,14
+Time-varying coefficient model,GSE44001,Disease-free survival,Fitted hazard ratio at time t,LONP1 (per log2 unit),24,1.112,0.728,1.697,,300,38,248,21
+Time-varying coefficient model,GSE44001,Disease-free survival,Fitted hazard ratio at time t,LONP1 (per log2 unit),36,1.18,0.699,1.991,,300,38,203,25
+Time-varying coefficient model,GSE44001,Disease-free survival,Fitted hazard ratio at time t,LONP1 (per log2 unit),60,1.272,0.623,2.595,,300,38,101,36
+Piecewise model (sensitivity analysis),GSE44001,Disease-free survival,Split at median event time (21.6 months),"LONP1, t <= 21.6 months",,0.911,0.531,1.565,0.7361,300,19,,
+Piecewise model (sensitivity analysis),GSE44001,Disease-free survival,Split at median event time (21.6 months),"LONP1, t > 21.6 months",,1.283,0.707,2.328,0.4133,300,19,,
+Linearity of LONP1 on the log-hazard scale,GSE44001,Disease-free survival,"Likelihood-ratio test, linear vs natural cubic spline (4 df)",LONP1 (per log2 unit),,12.802,,,0.0051,300,38,,
+Schoenfeld residual test of PH,TCGA-CESC,Overall survival,"Multivariable Cox, rank time transform",LONP1_log2RSEM,,3.677,,,0.0552,174,30,,
+Schoenfeld residual test of PH,TCGA-CESC,Overall survival,"Multivariable Cox, rank time transform",N1,,0.383,,,0.5363,174,30,,
+Schoenfeld residual test of PH,TCGA-CESC,Overall survival,"Multivariable Cox, rank time transform",T2,,0.097,,,0.7553,174,30,,
+Schoenfeld residual test of PH,TCGA-CESC,Overall survival,"Multivariable Cox, rank time transform",T34,,0.572,,,0.4495,174,30,,
+Schoenfeld residual test of PH,TCGA-CESC,Overall survival,"Multivariable Cox, rank time transform",age,,0.8,,,0.3711,174,30,,
+Schoenfeld residual test of PH,TCGA-CESC,Overall survival,"Multivariable Cox, rank time transform",GLOBAL,,5.529,,,0.3548,174,30,,
+Schoenfeld residual test of PH,TCGA-CESC,Overall survival,"Multivariable Cox, km time transform",LONP1_log2RSEM,,1.049,,,0.3058,174,30,,
+Schoenfeld residual test of PH,TCGA-CESC,Overall survival,"Multivariable Cox, km time transform",N1,,0.741,,,0.3893,174,30,,
+Schoenfeld residual test of PH,TCGA-CESC,Overall survival,"Multivariable Cox, km time transform",T2,,0.529,,,0.4671,174,30,,
+Schoenfeld residual test of PH,TCGA-CESC,Overall survival,"Multivariable Cox, km time transform",T34,,0.692,,,0.4054,174,30,,
+Schoenfeld residual test of PH,TCGA-CESC,Overall survival,"Multivariable Cox, km time transform",age,,0.318,,,0.5729,174,30,,
+Schoenfeld residual test of PH,TCGA-CESC,Overall survival,"Multivariable Cox, km time transform",GLOBAL,,3.329,,,0.6494,174,30,,
+Schoenfeld residual test of PH,GSE44001,Disease-free survival,"Multivariable Cox, rank time transform",LONP1_log2,,0.069,,,0.7924,300,38,,
+Schoenfeld residual test of PH,GSE44001,Disease-free survival,"Multivariable Cox, rank time transform",diameter_cm,,0.96,,,0.3272,300,38,,
+Schoenfeld residual test of PH,GSE44001,Disease-free survival,"Multivariable Cox, rank time transform",stage_adv,,0.009,,,0.9251,300,38,,
+Schoenfeld residual test of PH,GSE44001,Disease-free survival,"Multivariable Cox, rank time transform",GLOBAL,,1.038,,,0.792,300,38,,
+Schoenfeld residual test of PH,GSE44001,Disease-free survival,"Multivariable Cox, km time transform",LONP1_log2,,0.035,,,0.8507,300,38,,
+Schoenfeld residual test of PH,GSE44001,Disease-free survival,"Multivariable Cox, km time transform",diameter_cm,,1.371,,,0.2417,300,38,,
+Schoenfeld residual test of PH,GSE44001,Disease-free survival,"Multivariable Cox, km time transform",stage_adv,,0.208,,,0.6483,300,38,,
+Schoenfeld residual test of PH,GSE44001,Disease-free survival,"Multivariable Cox, km time transform",GLOBAL,,1.614,,,0.6562,300,38,,

@@ -1,0 +1,43 @@
+Proportional hazards assumption: Schoenfeld residual tests (lifelines proportional_hazard_test)
+Data: 02_TCGA_CESC_clinical_LONP1_survival.csv; models reproduce 09_figs_mito_surv_immune_plotnine.py
+
+=== Univariate OS: n=281, events=68 ===
+[Univariate OS] time_transform=rank
+    LONP1_log2RSEM       chi2=5.338  p=0.0209
+    GLOBAL               chi2=5.338  df=1  p=0.0209
+[Univariate OS] time_transform=km
+    LONP1_log2RSEM       chi2=3.920  p=0.0477
+    GLOBAL               chi2=3.920  df=1  p=0.0477
+
+=== Univariate DSS: n=277, events=51 ===
+[Univariate DSS] time_transform=rank
+    LONP1_log2RSEM       chi2=2.816  p=0.0933
+    GLOBAL               chi2=2.816  df=1  p=0.0933
+[Univariate DSS] time_transform=km
+    LONP1_log2RSEM       chi2=2.587  p=0.1077
+    GLOBAL               chi2=2.587  df=1  p=0.1077
+
+=== Univariate PFS: n=281, events=68 ===
+[Univariate PFS] time_transform=rank
+    LONP1_log2RSEM       chi2=8.236  p=0.0041
+    GLOBAL               chi2=8.236  df=1  p=0.0041
+[Univariate PFS] time_transform=km
+    LONP1_log2RSEM       chi2=7.798  p=0.0052
+    GLOBAL               chi2=7.798  df=1  p=0.0052
+
+=== Multivariable OS: n=174, events=30 ===
+[Multivariable OS] time_transform=rank
+    LONP1_log2RSEM       chi2=3.677  p=0.0552
+    N1                   chi2=0.383  p=0.5363
+    T2                   chi2=0.097  p=0.7553
+    T34                  chi2=0.572  p=0.4495
+    age                  chi2=0.800  p=0.3711
+    GLOBAL               chi2=5.529  df=5  p=0.3548
+[Multivariable OS] time_transform=km
+    LONP1_log2RSEM       chi2=1.049  p=0.3058
+    N1                   chi2=0.741  p=0.3893
+    T2                   chi2=0.529  p=0.4671
+    T34                  chi2=0.692  p=0.4054
+    age                  chi2=0.318  p=0.5729
+    GLOBAL               chi2=3.329  df=5  p=0.6494
+

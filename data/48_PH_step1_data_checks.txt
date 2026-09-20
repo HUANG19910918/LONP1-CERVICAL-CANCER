@@ -1,0 +1,37 @@
+STEP 1: data integrity / coding / sample consistency
+rows=295  cols=['patient_id', 'LONP1_log2RSEM', 'OS_months', 'OS_event', 'DSS_months', 'DSS_event', 'PFS_months', 'PFS_event', 'age', 'path_T', 'path_N']
+
+OS_event: unique=[0.0, 1.0]  n_missing=1  n_events=68
+DSS_event: unique=[0.0, 1.0]  n_missing=5  n_events=51
+PFS_event: unique=[0.0, 1.0]  n_missing=1  n_events=68
+
+OS_months: n_missing=1  min=0.000  median=20.94  max=210.67  n_zero=13  n_neg=0
+DSS_months: n_missing=1  min=0.000  median=20.94  max=210.67  n_zero=13  n_neg=0
+PFS_months: n_missing=1  min=0.000  median=19.20  max=210.67  n_zero=13  n_neg=0
+
+analysis sets: OS=281  DSS=277  PFS=281  multivariableOS=174
+MV subset of OS? True;  OS\MV dropped=107
+OS vs PFS identical? True;  OS\PFS=0  PFS\OS=0
+OS vs DSS: OS\DSS=4  DSS\OS=0
+
+reasons for exclusion from multivariable model (within the OS set, n=281):
+  missing/unparsable T stage: 59   (raw path_T values: ['T1A1', 'T1B', 'T1B1', 'T1B2', 'T2', 'T2A', 'T2A1', 'T2A2', 'T2B', 'T3', 'T3A', 'T3B'] ...)
+  missing age:                0
+  path_N not in N0/N1:        105   (values: {'N0': 124, 'NX': 63, 'N1': 52, 'nan': 42})
+
+risk set over follow-up (OS and PFS):
+  month  at_risk_OS  cumEv_OS  at_risk_PFS  cumEv_PFS
+      0         281         0          281          0
+      6         239         9          234         13
+     12         219        19          207         29
+     24         135        41          116         59
+     36          88        52           79         64
+     48          58        59           54         66
+     60          41        59           36         67
+     84          24        63           23         67
+    120          14        67           14         68
+    180           2        68            2         68
+    240           0        68            0         68
+
+OS: median follow-up (all) = 23.0 mo; median event time = 19.9 mo
+PFS: median follow-up (all) = 20.0 mo; median event time = 13.6 mo

@@ -1,0 +1,26 @@
+GSE44001 external cohort: proportional hazards check
+n=300, events=38
+
+[univariate DFS] HR=1.07 (0.72-1.60), p=0.727
+   Schoenfeld (rank): chi2=0.098, p=0.7547
+   Schoenfeld (km): chi2=0.022, p=0.8832
+
+[multivariable DFS] n=300, events=38
+   Schoenfeld (rank) LONP1_log2     chi2=0.069  p=0.7924
+   Schoenfeld (rank) diameter_cm    chi2=0.960  p=0.3272
+   Schoenfeld (rank) stage_adv      chi2=0.009  p=0.9251
+   Schoenfeld (rank) GLOBAL         chi2=1.038 df=3 p=0.7920
+   Schoenfeld (km) LONP1_log2     chi2=0.035  p=0.8507
+   Schoenfeld (km) diameter_cm    chi2=1.371  p=0.2417
+   Schoenfeld (km) stage_adv      chi2=0.208  p=0.6483
+   Schoenfeld (km) GLOBAL         chi2=1.614 df=3 p=0.6562
+
+[time-varying DFS]  c=2.984 (t=19.8 mo)
+   b1 (LONP1 x log t) = +0.1467 (se 0.2536, p=0.5629)
+    month    HR(t)             95% CI  n_at_risk
+        6     0.91          0.46-1.80        290
+       12     1.00          0.64-1.58        274
+       24     1.11          0.73-1.70        248
+       36     1.18          0.70-1.99        203
+       60     1.27          0.62-2.60        101
+      120     1.41          0.51-3.89          0

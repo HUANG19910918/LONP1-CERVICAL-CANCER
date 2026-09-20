@@ -1,0 +1,14 @@
+GSE44001 multivariable Cox: sensitivity to tumour diameters recorded as 0 cm
+diameter = 0 cm: n=14 ({'IB1': 9, 'IA2': 5}), events=0
+
+=== All patients (as published): n=300, events=38 ===
+   LONP1 (per log2 unit)        HR=1.032 (0.699-1.522)  p=0.8748
+   FIGO IB2-IIA vs IA-IB1       HR=1.959 (0.964-3.981)  p=0.0632
+   Largest diameter (per cm)    HR=1.294 (1.099-1.523)  p=0.0019
+
+=== Excluding diameter = 0 cm: n=286, events=38 ===
+   LONP1 (per log2 unit)        HR=1.027 (0.697-1.512)  p=0.8936
+   FIGO IB2-IIA vs IA-IB1       HR=1.949 (0.965-3.935)  p=0.0628
+   Largest diameter (per cm)    HR=1.274 (1.077-1.507)  p=0.0047
+
+Conclusion aid: change in the diameter HR and in the LONP1 HR between the two models above.
