@@ -3,7 +3,8 @@
 #   纯度: TCGA PanCanAtlas ABSOLUTE 结果 TCGA_mastercalls.abs_tables_JSedit.fixed.txt
 #         (https://api.gdc.cancer.gov/data/4f277128-f793-4354-a13d-30cc7fe9f6b5, GDC PanCanAtlas publications page)，取 call status=="called"
 #   表达: raw_data/08 (RSEM→log2(RSEM+1))；CNA: raw_data/07；上皮分数: raw_data/28 (TCGA样本, Xena)；免疫签名: raw_data/08 成员基因
-#   统计: Spearman；偏相关 = 对两变量分别用 OLS 去除纯度后取残差的 Spearman；OLS 含纯度协变量
+#   统计: Spearman；纯度校正 = 对两变量分别用 OLS(原值) 去除纯度后取残差再算 Spearman
+#         (注意: 这不是先取秩的标准偏 Spearman, 正文与图注按实际算法表述)；OLS 含纯度协变量
 # 输出: raw_data/42_purity_merged.csv, 43_purity_stats.txt；figures/FigS1_purity.png/pdf
 # 用法: python3 19_purity_adjustment.py <分析根目录> <ABSOLUTE文件>
 import sys, os
@@ -72,7 +73,7 @@ mc = mc.assign(rx=resid(mc.log2CNA, mc[["purity"]]), ry=resid(mc.LONP1_log2, mc[
 pC = (ggplot(mc, aes("rx", "ry")) + geom_point(size=1.4, alpha=0.55, color=NPG["navy"])
       + geom_smooth(method="lm", color=NPG["red"], fill=NPG["salmon"], size=0.8)
       + labs(x="LONP1 log2 CNA ratio (purity-adj. residual)", y="LONP1 mRNA (purity-adj. residual)",
-             title=f"Copy number vs expression, purity-adjusted\npartial Spearman rho = {rr if False else spearmanr(mc.rx, mc.ry)[0]:.2f}, p = {spearmanr(mc.rx, mc.ry)[1]:.1e}")
+             title=f"Copy number vs expression, purity-adjusted\nSpearman rho of purity residuals = {spearmanr(mc.rx, mc.ry)[0]:.2f}, p = {spearmanr(mc.rx, mc.ry)[1]:.1e}")
       + T + theme(plot_title=element_text(size=10.5, weight="bold", ha="center", family=FAM)))
 pC.save(os.path.join(fig, "FigS1C_CNA_purity_adjusted.png"), width=3.8, height=3.8, dpi=300, verbose=False)
 pC.save(os.path.join(fig, "FigS1C_CNA_purity_adjusted.pdf"), width=3.8, height=3.8, verbose=False)
