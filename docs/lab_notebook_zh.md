@@ -392,5 +392,8 @@ Spearman，签名=成员基因z-score均值（n=294）：M1巨噬细胞 rho=-0.2
 - `environment.txt` 改为 A（原始分析）/ B（补充分析）两段；lifelines 记为 0.30.0→0.30.3（R18/R19 两轮），statsmodels 原始版本未记录，但 Environment B 以 0.15.0 复算得到相同的纯度校正估计（0.4472）
 
 **E. 待办**
-- Fig S3 尚未并入 `Additional_file_2_Supplementary_Figures.pdf`
-- 代码仓库需推送 GitHub 并发 Release 生成新 Zenodo 版本；稿件 Availability 现引 DOI 10.5281/zenodo.22840982 对应旧内容，发版后需更新（或改引 concept DOI）
+- **补充（同日晚）**：核对 Table S8 与正文时发现 4 处第 3 位小数不一致（PFS 时间依赖 p、DSS 时间依赖 p、PFS 60 月 HR、PFS 分段上限）。根源为脚本 24 按**全局均值**中心化、27/28 按**分析子集均值**；首次尝试修正时脚本 24 因参数约定不一致（实际只接受 raw_data 路径而非分析根目录）静默报错未重跑，一度误判为"优化器容差"。改为子集均值并修正参数解析后重跑，24/27/28 三者输出**完全一致**（0.0131 / 0.0065 / 0.0897；60 月 HR 0.25；分段 0.27–0.94），正文 4 处已按 Table S8 改正。
+- 同时修正：脚本 22/23/24/26 现同时接受分析根目录与 raw_data 路径（原头部注释与实际用法不符）；13_assemble.py 面板源目录更新为 `【1】图片源文件/(1) 子图原文件` 并新增 FigureS3 版面。
+- **Additional file 2 已重做**：合成图 FigureS1 用修正后的 C 面板重新生成（原图内嵌"partial Spearman rho"字样）；新增 Fig S3 页；副标题由旧文章标题更新为现标题；Fig S1 图注统计量名称同步更正。docx 与 PDF 均已更新，并复制到 `【3】文章初稿/最终版本/`（与 Additional file 1、正文同目录，构成完整投稿材料）。
+- **已完成**：代码仓库经 GitHub 网页分 5 批上传（共 7 个 commit），发布 Release **V1.1.0**；Zenodo 自动生成新版本记录 22857755。稿件 Availability 已改为引用 **concept DOI 10.5281/zenodo.22840981**（恒指向最新版），并注明本文对应版本为 V1.1.0 / 10.5281/zenodo.22857755。
+- **仍待推送**：统一数字口径时改动的脚本 13/22/23/24/26、数据 47–50、合成图 FigureS1/S3（png+pdf）尚未同步到 GitHub，需再传一批并考虑是否发 V1.1.1。
