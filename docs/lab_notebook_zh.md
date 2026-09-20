@@ -284,12 +284,6 @@ Spearman，签名=成员基因z-score均值（n=294）：M1巨噬细胞 rho=-0.2
 **当前状态**：稿件 **v7**（内容与 v6 相同，仅细节修正）。待用户：作者信息/立项编号/ORCID；GitHub+Zenodo 发布；字体文件；预警名单自查
 
 
-### R21. 图片目录整理（2026-08-31，用户指令）
-- `figures/` 根目录下的 78 个散 panel 文件（Fig*.png/pdf + GraphicalAbstract）移入新建的 **`figures/子图原文件/`**；根目录现仅留 figure_captions.md 与四个子目录
-- 目录含义：**子图原文件** = 各 panel 原始输出（PNG 300dpi + 矢量 PDF，可单独替换/重排）；**composite** = 按稿件编号拼好的整版图 Figure 1–6 + FigureS1–S2（投稿用）；**废弃图片** = 历史弃用版本；**_obsolete** 空目录（无删除权限）
-- 同步修改脚本输出/读取路径：02–05、07、07b、08、09、10、11、12、14、16、19、20 的 panel 输出目录改为 `figures/子图原文件/`（自动建目录）；13_assemble.py 从该目录读取、仍输出到 `figures/composite/`
-- 校验：13_assemble.py 版面引用的 38 个 panel 在新目录中全部存在；composite 16 个文件未改动（OneDrive 对已存在文件的覆盖写受限，本次无需重拼）
-
 ## 拟定图表规划（R绘图，单panel输出+caption，用户手动拼图）
 
 - Fig1 表达：A TCGA+GTEx小提琴/箱线图；B-D GEO三队列箱线图（含GSE63514阴性结果）
@@ -329,3 +323,74 @@ Spearman，签名=成员基因z-score均值（n=294）：M1巨噬细胞 rho=-0.2
 - 2026-08-29：环境故障→改浏览器方案；完成R1-R8全部核心分析；原始数据01-05落盘
 - 2026-08-29晚：R环境搭建；R复算全部通过；13个图panel完成；标书核对完成（预期成果=SCI 1篇；标书无立项编号，待用户提供）
 - 2026-08-29晚：BMC Cancer格式英文初稿完成→`【3】文章初稿/LONP1_cervical_cancer_manuscript_v1.docx`（正文数值均取自R复算/落盘CSV；含阴性结果与GSE63514不一致的完整讨论；生成脚本`scripts/build_manuscript.js`）。待补：作者/单位/邮箱、基金立项编号、预实验数据（如有则增加验证章节）
+
+---
+
+## R22 2026-09-03 用户端 v7 手改稿状态核对（参考文献迁移中）
+- 背景：用户在本机对 `【3】文章初稿/LONP1_cervical_cancer_manuscript_v7.docx` 做了手动修改（mtime 2026-09-02，42,405 字节；容器内构建版为 30,807 字节）。暂存后与容器 v7 逐行比对。
+- 已完成的手改：
+  1. 标题改为无冒号版 "Multi-resolution transcriptomic analysis of LONP1 in cervical cancer reveals an epithelial-enriched, copy-number-driven mitochondrial proteostasis program"。
+  2. 摘要内 4 处科学计数法改为真上标（7.2×10⁻⁴、2.3×10⁻⁵、3.1×10⁻¹³、1.1×10⁻⁸¹）。
+  3. Background 全部引用改由 Zotero 域代码插入（document.xml 含 7 处 ADDIN ZOTERO_ITEM、6 条 CSL_CITATION），并重编号为新 1–9；其中旧 2/3 换成 Schiffman 2007、Tewari 2025，旧 5/6/9/10/12/15/16 未保留，正文相应改为只提 ATF5。
+- 尚未完成 / 当前不一致处（程序化核对）：
+  - 参考文献表仅 9 条，而正文最大引用号仍为 44；Methods/Results/Discussion 共 22 处引用位点、涉及 34 条旧文献仍是旧编号。
+  - Discussion 仍引用 [10-12]（ATF4/ATF5 系列）与 [13-16]（LONP1 肿瘤系列），但这些文献已在 Background 精简时移出文献表，需在 Zotero 中重新加入或改写该处句子。
+  - 正文余部仍有 31 处 `x10-`、4 处 `+/-`、7 处 `>=`、3 处 `<=` 未转符号；`rho=` 19 处未转 ρ。
+- 产出：`【3】文章初稿/参考文献补插对照表.md`（按 Methods/Results/Discussion 顺序列出每个待插引用位点、上下文与对应旧文献全称，另附去重旧文献清单）。
+- 处理原则：因稿件已含 Zotero 活动域代码，**不再对该 docx 做程序化改写**（会破坏域），后续编号与符号统一由用户在 Word/Zotero 内完成；容器内 v7 仅作比对基线保留。
+
+---
+
+## R23 2026-09-06 补回 Fig 5 阴性结果声明句；确认参考文献迁移已完成
+- 背景：用户已在本机通过 Zotero 完成 Background 之后全部引用的重新插入（对照 `参考文献补插对照表.md` 手工操作）。程序化核对：正文引用号与文献表已 1–30 完全对齐，无孤儿引用，document.xml 中 ZOTERO 域代码 21 处、CSL_CITATION 20 条，均为活动域。
+- 发现 Fig 5E 段落中原有的诚信声明句在手动编辑过程中被意外删除：
+  "We report this negative result in full; no alternative cut-points were explored."
+  该句对应课题组"如实报告、不做 optimal-cutoff p-hacking"的原则，在 Results 中的落地表述。
+- 处理：仅对 `word/document.xml` 中该处纯文本 `<w:t>` run 做字符串替换插回原句，不触碰任何 `w:fldChar`/`w:instrText`（Zotero 域代码），插回后 pandoc 转纯文本核对，diff 确认仅新增该句，其余内容逐字符一致；ZOTERO/CSL_CITATION 计数不变，域代码未受影响。已写回 OneDrive 原文件（同路径覆盖，expectedMtimeMs 校验通过，无并发冲突）。
+- 记录在案、尚待用户后续处理的格式一致性问题（手动编辑引入，未改动）：
+  - "microdissected" / "micro dissected" 混用（3 vs 3）
+  - "pseudobulk" / "pseudo bulk" 混用（3 vs 5）
+  - "proteostasis" / "protein homeostasis" 混用（4 vs 5）
+  - "TCGA+GTEx" / "TCGA + GTEx" 间距不统一（3 vs 4）
+  - "in silico" / "in-silico" 连字符不统一（各 1 处）
+
+---
+
+## R24 2026-09-20 Methods 逐节同行评议式复核（Single-cell → Statistics），含比例风险假设补充分析
+
+**工作方式**：用户逐条提出【修改建议/理由/建议改为】，每条先核对代码与原始数据再判断同意与否，获用户确认后以 Word 审阅模式（作者 Claude）改写稿件；全程只改纯文本 `<w:t>`，不触碰 `w:fldChar`/`w:instrText`。**改写后核验：ZOTERO 域 29 处、CSL_CITATION 29 条、fldChar 30 组，与改写前逐项一致，Zotero 活动域未受影响**（R23 禁令未被违反）。每轮均通过 docx 往返校验（去除修订后与原文逐字符一致，段落数 132 不变）并渲染 PDF 目视确认。
+
+**A. 术语与口径更正（据代码核对，非推定）**
+- `pseudobulk` → 按实际算法改为 sample-level / mean-expression profile（方法为对 log 归一化值取均值，非计数汇总）
+- Enrichr 背景：脚本用标准 `addList`+`enrich`，未上传自定义背景 → 正文如实写为各文库默认背景
+- 百分位排名：原文把全局正偏移归因于 transcript detection，脚本未做该定量验证 → 改为可能性表述，并注明百分位不校正技术混杂
+- 样本中心化：原文称去除 stage/copy-number 差异，实际仅去除样本均值 → 改为如实表述
+- 线粒体面板显著性星号用的是名义 p（`res$sig <- cut(res$p, ...)`，无 p.adjust）→ 注明为名义 p、探索性
+- `partial Spearman`：脚本对**原值**回归取残差再算 Spearman，非先取秩的标准偏相关 → Results 两处改名，Fig S1C 标题重画（脚本 30）。两法差异极小（CNA 0.447 vs 0.430；M1 −0.219 vs −0.209）
+- HPA：实验记录中 staining=medium / intensity=moderate 两字段，正文误将等级值 medium 安在 intensity 上 → 改为 protein expression level，并注明正常仅 3 例、非配对描述性比较
+- `All tests were two-sided`：`fisher_exact(..., alternative="greater")` 为单侧、Enrichr 上尾、KW 为总体检验 → 按实际分述
+
+**B. 比例风险假设（PH）诊断 —— 本轮唯一实质性发现**
+- 此前从未检验过 PH（全目录检索 Schoenfeld/cox.zph 零命中）。补做后：**OS p=0.021、PFS p=0.0041 违反 PH**；DSS p=0.093 未检出；多因素 OS 全局 p=0.35 未检出
+- 时变系数模型 log HR(t)=b0+b1(log t − c)：三个 TCGA 终点 HR 均随时间单调下降、约在中位事件时间穿过 1（OS 6 月 1.55 → 60 月 0.45，p=0.013；PFS 1.42 → 0.24，p=0.0064；DSS p=0.089）；按中位事件时间分段（前后各 34 事件）方向一致
+- 线性假设无问题（样条 LRT p≥0.77）；**外部队列 GSE44001 未见 PH 违反（p=0.75/0.88），时变项 p=0.56 且方向相反 → TCGA 的时间依赖模式未获独立复现**
+- 首版时变模型因 LONP1（均值 10.6）与自身交互项共线产出 HR(3月)=160 的伪结果，中心化后重算方得稳定估计（已在脚本 24 注释中记录该错误）
+- 定位：事后诊断、晚期风险集小（60 月时 OS/PFS 仅 41/36 例）、DSS 未显著、三终点同批病例 → 作探索性报告；正文全面改为 **time-constant** 口径（摘要、Results 小标题与段落、Discussion、Conclusions、图 5 图注），并说明原 HR 为时间平均效应，不等于"无关联"
+- Limitations 补两条：多因素模型排除 107/281 例（其中 105 例因 path_N 为 NX 或缺失，与是否手术分期相关，非随机缺失）；60 月后估计依赖不足 45 例
+
+**C. 其他核对与补充**
+- 多因素 Cox 变量编码与排除规则补入 Methods（T1 亚期合并、N 仅取 N0/N1、n=174/30 事件）
+- GSE44001 直径为连续变量（cm）；发现 14 例直径记录为 0（IB1 9、IA2 5，事件数 0），剔除后 HR 1.294→1.274（p=0.0019→0.0047），结论不变（脚本 29）
+- 17,378 与 17,324 之差为 54 个缺基因组定位的基因，已在 Methods 说明
+- LONP1 自身未进共表达排名（cBioPortal 接口不返回查询基因；单细胞侧 `.drop("LONP1")`），已在正文注明
+- HPA 原始 XML（`work/hpa_lonp1.xml`）已丢失，按实验记录转录为 `raw_data/54_HPA_LONP1_staining.csv` 入库，注明来源性质
+
+**D. 产出**
+- 脚本：`22_PH_assumption_schoenfeld.py`、`23_PH_step1_data_checks.py`、`24_PH_step2_timevarying.py`、`25_PH_schoenfeld_plots.py`、`26_PH_GSE44001.py`、`27_figS3_PH_diagnostics.py`、`28_tableS8_PH_results.py`、`29_GSE44001_diameter_sensitivity.py`、`30_regen_figS1C.py`
+- 数据：`raw_data/47`–`54`
+- 图表：**Fig S3**（A 缩放 Schoenfeld 残差；B HR(t) 及 95%CI，含 GSE44001 对照）；**Table S8**（68 行，已写入 Additional file 1，原表备份为 `_backup_before_TableS8.xlsx`）；Fig S1C 重画
+- `environment.txt` 改为 A（原始分析）/ B（补充分析）两段；lifelines 记为 0.30.0→0.30.3（R18/R19 两轮），statsmodels 原始版本未记录，但 Environment B 以 0.15.0 复算得到相同的纯度校正估计（0.4472）
+
+**E. 待办**
+- Fig S3 尚未并入 `Additional_file_2_Supplementary_Figures.pdf`
+- 代码仓库需推送 GitHub 并发 Release 生成新 Zenodo 版本；稿件 Availability 现引 DOI 10.5281/zenodo.22840982 对应旧内容，发版后需更新（或改引 concept DOI）

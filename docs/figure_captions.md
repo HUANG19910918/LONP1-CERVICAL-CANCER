@@ -77,3 +77,16 @@ Median-split KM log-rank p=0.83; Cox HR=1.07 (0.72–1.60) p=0.73; multivariable
 | 5C-D | raw_data/08→25 | 同上 | 检查点基因均\|rho\|<0.15 |
 
 **字体说明**：全图当前为Liberation Serif（TNR公制兼容替身）；将times*.ttf放入`fonts/`目录后重跑08/09/07b脚本即切换为正版Times New Roman。图注补充：Fig2新增(D)T分期(KW p=0.49)、(E)N状态(p=0.999)；Fig3已于2026-08-30整体重做为LONP1中心版（A-F，见上）；Fig4新增(E)多因素Cox森林图；Fig5新增(C)DC散点、(D)检查点基因条形图。
+
+## 补充（2026-09-20，R24）
+
+| 图/表 | 源数据 | 脚本 | 关键数值 |
+|---|---|---|---|
+| Fig S1C（重画） | raw_data/42 | 30_regen_figS1C.py | 标题统计量改名为 Spearman rho of purity residuals = 0.45, p = 1.2e-15（算法未变） |
+| Fig S3A | raw_data/02 | 27_figS3_PH_diagnostics.py | 缩放 Schoenfeld 残差；Schoenfeld p：OS 0.021/0.048、DSS 0.093/0.108、PFS 0.0041/0.0052（rank/KM） |
+| Fig S3B | raw_data/02, 44 | 同上 | HR(t) 及 95%CI；时间依赖 p：OS 0.013、DSS 0.090、PFS 0.007、GSE44001 0.563 |
+| Table S8 | raw_data/52 | 28_tableS8_PH_results.py | 68 行：PH 检验、时变模型 HR(t)、分段敏感性、线性检验 |
+
+**Fig S3 图注**：Proportional-hazards diagnostics for the LONP1 survival models. (A) Scaled Schoenfeld residuals for LONP1 in the univariate Cox models of overall, disease-specific and progression-free survival in TCGA-CESC; red line, lowess trend; dashed line, zero. (B) Hazard ratio for LONP1 as a function of follow-up time from the time-varying coefficient model with 95% CI, with the external GSE44001 cohort shown for comparison.
+
+**待办**：Fig S3 尚未并入 `(3) Additional_file_2_Supplementary_Figures.pdf`（现仅含 Fig S1–S2）。
