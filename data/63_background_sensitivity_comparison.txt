@@ -1,0 +1,33 @@
+padj: default background -> custom background (key mitochondrial / translation terms)
+bulk_pos_excl19p13.3_n102      Mitochondrial Cytochrome C Oxidase Assembly (GO:0033617 2.5e-01 -> 2.7e-01
+bulk_pos_excl19p13.3_n102      Mitochondrial Inner Membrane (GO:0005743)               2.3e-12 -> 1.6e-11
+bulk_pos_excl19p13.3_n102      Mitochondrial Membrane (GO:0031966)                     2.3e-12 -> 1.6e-11
+bulk_pos_excl19p13.3_n102      Mitochondrial Respiratory Chain Complex Assembly (GO:00 5.4e-03 -> 9.0e-03
+bulk_pos_excl19p13.3_n102      Organelle Inner Membrane (GO:0019866)                   5.7e-12 -> 2.5e-11
+bulk_pos_excl19p13.3_n102      Oxidative phosphorylation                               7.6e-02 -> 6.3e-02
+bulk_pos_excl19p13.3_n102      Translation (GO:0006412)                                2.3e-12 -> 1.3e-11
+  bulk_pos_excl19p13.3_n102: significant terms default=46 custom=44 shared=44
+bulk_pos_all_n164              Mitochondrial Cytochrome C Oxidase Assembly (GO:0033617 3.4e-01 -> 3.7e-01
+bulk_pos_all_n164              Mitochondrial Inner Membrane (GO:0005743)               7.0e-14 -> 7.3e-13
+bulk_pos_all_n164              Mitochondrial Membrane (GO:0031966)                     3.0e-13 -> 4.2e-12
+bulk_pos_all_n164              Mitochondrial Respiratory Chain Complex Assembly (GO:00 5.6e-04 -> 1.2e-03
+bulk_pos_all_n164              Organelle Inner Membrane (GO:0019866)                   1.9e-13 -> 1.4e-12
+bulk_pos_all_n164              Oxidative phosphorylation                               1.0e-03 -> 8.1e-04
+bulk_pos_all_n164              Translation (GO:0006412)                                4.4e-13 -> 4.0e-12
+  bulk_pos_all_n164: significant terms default=82 custom=75 shared=75
+epi_top300_raw                 Mitochondrial Cytochrome C Oxidase Assembly (GO:0033617 5.3e-03 -> 1.7e-02
+epi_top300_raw                 Mitochondrial Inner Membrane (GO:0005743)               7.6e-03 -> 1.2e-01
+epi_top300_raw                 Mitochondrial Membrane (GO:0031966)                     6.5e-05 -> 4.9e-03
+epi_top300_raw                 Mitochondrial Respiratory Chain Complex Assembly (GO:00 9.6e-08 -> 4.3e-06
+epi_top300_raw                 Organelle Inner Membrane (GO:0019866)                   7.3e-03 -> 1.1e-01
+epi_top300_raw                 Oxidative phosphorylation                               6.3e-01 -> 8.2e-01
+epi_top300_raw                 Translation (GO:0006412)                                8.1e-01 -> 9.4e-01
+  epi_top300_raw: significant terms default=12 custom=9 shared=9
+epi_top300_sample_centered     Mitochondrial Cytochrome C Oxidase Assembly (GO:0033617 6.2e-03 -> 2.3e-02
+epi_top300_sample_centered     Mitochondrial Inner Membrane (GO:0005743)               1.7e-04 -> 7.4e-03
+epi_top300_sample_centered     Mitochondrial Membrane (GO:0031966)                     4.8e-04 -> 2.2e-02
+epi_top300_sample_centered     Mitochondrial Respiratory Chain Complex Assembly (GO:00 1.4e-05 -> 3.5e-04
+epi_top300_sample_centered     Organelle Inner Membrane (GO:0019866)                   2.5e-04 -> 7.9e-03
+epi_top300_sample_centered     Oxidative phosphorylation                               6.5e-01 -> 9.7e-01
+epi_top300_sample_centered     Translation (GO:0006412)                                5.1e-01 -> 6.4e-01
+  epi_top300_sample_centered: significant terms default=20 custom=10 shared=10

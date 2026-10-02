@@ -57,3 +57,12 @@
 
 ## 稿件生成链
 build_manuscript.js (v2) → patch_v3 → v3 → patch_v4 → v4 → patch_v5 + patch_v5b → v5 → patch_v6 → v6 → patch_v7 → **v7**（当前）
+
+## 2026-10 补充（第三轮）
+| 编号 | 文件 | 说明 | 脚本 |
+|---|---|---|---|
+| 60 | enrichment_custom_background | Enrichr 自定义背景敏感性（Table S9） | 35 |
+| 61 | enrichment_bulk_pos_all_default_with_genes | bulk 正相关默认背景重跑，含交集基因（补全 Table S2） | 35 |
+| 62/63 | enrichment_background_sensitivity.txt / background_sensitivity_comparison.txt | 汇总与默认 vs 自定义背景对比 | 35 / 内联 |
+| 64 | PHB1_epithelial_per_cell_per_sample | PHB1 逐细胞/逐样本相关（Table S5） | 37（17 脚本 PHB1→PHB 版本） |
+脚本 36 更新 Additional file 1 的 Table S2/S9。
