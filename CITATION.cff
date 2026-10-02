@@ -8,7 +8,7 @@ authors:
   - family-names: "Huang"
     given-names: "Shiyuan"
     affiliation: "Department of Neurological Rehabilitation, The Second Affiliated Hospital of Wenzhou Medical University"
-version: "1.0.0"
-date-released: "2026-08-30"
+version: "1.2.0"
+date-released: "2026-10-02"
 license: MIT
 repository-code: "https://github.com/HUANG19910918/LONP1-CERVICAL-CANCER"

@@ -78,7 +78,7 @@ See `environment.txt`, which documents two environments: **A** for the original 
 ## Notes on reproducibility
 
 * Statistics were computed independently in R and Python (and, for the first pass, in browser JavaScript) and cross-checked; see `data/verification_report.txt`.
-* Leiden clustering of the epithelial subset is deterministic for a fixed scanpy/igraph version but may differ slightly across versions; `data/36_epithelial_recluster_check.txt` records the run used in the manuscript (25 subclusters, 58 pseudobulk units).
+* Leiden clustering of the epithelial subset is deterministic for a fixed scanpy/igraph version but may differ slightly across versions; `data/36_epithelial_recluster_check.txt` records the run used in the manuscript (25 subclusters, 58 pseudobulk units). A rerun in a different environment (October 2026) gave 55 units, so profile-level (n=58) values are tied to the recorded run; per-cell and per-sample correlations reproduce exactly (`scripts/37_PHB1_epithelial_corr_percell_persample.py`, `data/64_PHB1_epithelial_per_cell_per_sample.csv`). Enrichr custom-background sensitivity analyses: `scripts/35_enrichr_background_sensitivity.py`, `data/60_`–`63_`.
 * Negative and discordant results (no prognostic association; no difference in microdissected epithelium; positional confounding of co-expression) are reported in full.
 
 ## License
