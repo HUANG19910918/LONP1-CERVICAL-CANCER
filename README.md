@@ -71,6 +71,10 @@ python3 scripts/18_verify_references.py refs.txt data/40_reference_check.csv
 
 `<analysis_dir>` is a directory containing `raw_data/` (= `data/` here) and `figures/`. Fonts: scripts use Times New Roman when `../fonts/times*.ttf` is present, otherwise the metric-compatible Liberation Serif.
 
+## Revision analyses (V1.3.0)
+
+The multi-cohort single-cell, copy-number-adjusted co-expression and Mendelian randomization analyses added in revision are in [`supplementary_analyses/`](supplementary_analyses/README.md), with their own run order and environment (see also `CHANGELOG.md`).
+
 ## Environment
 
 See `environment.txt`, which documents two environments: **A** for the original analyses (scripts 00–21) and **B** for the supplementary proportional-hazards diagnostics and time-varying models (scripts 22–30). Key versions: R 4.3.3 (survival, ggplot2, jsonlite); Python 3.10–3.11 with scanpy 1.11.5, anndata, pandas, numpy, scipy, statsmodels, lifelines 0.30, plotnine 0.15.8, matplotlib; Node 22 with `docx`.

@@ -1,0 +1,41 @@
+MIN_CELLS per pseudobulk unit = 100
+                   units  included  cells
+category                                 
+HSIL_epi               2         2   4150
+mal_gain19p13_3       40         5   3333
+mal_nogain19p13_3     40        37  64021
+malignant_epi         40        38  67354
+nonmal_epi_tumor      40        15  10898
+normal_epi             6         6  12004
+
+[C1] 恶性上皮（癌样本）vs 正常上皮参照 —— pseudobulk log2CPM
+               count   mean    std    min    25%    50%    75%    max
+category                                                             
+malignant_epi   38.0  4.091  0.711  2.424  3.568  4.081  4.523  5.687
+normal_epi       6.0  4.219  0.458  3.493  3.978  4.318  4.557  4.685
+  Mann–Whitney p=0.605; OLS(+dataset) diff=0.180 (SE 0.374) p=0.634; n_mal=38, n_norm=6
+  GSE208653 内部: mal mean=4.196 (n=3) vs normal 4.473 (n=4)
+  E-MTAB-11948 内部: mal mean=4.544 (n=3) vs normal 3.712 (n=2)
+  细胞级 MixedLM（样本随机截距，powell）: beta=-0.002 SE=0.026 p=0.945; cells=79253
+  样本级 细胞均值 log1p(CP10K): 恶性 中位 0.111 vs 正常 0.133; Mann–Whitney p=0.514
+
+[C2] 同样本内 恶性 vs 非恶性上皮（癌样本）
+  配对样本 n=14; 中位差(恶性−非恶性)=-0.332; 恶性更高的样本 3/14; Wilcoxon p=0.0419
+  细胞级 MixedLM（lbfgs）: beta=0.008 SE=0.004 p=0.0292; cells=40616
+  配对 细胞均值 log1p(CP10K): 中位差=-0.003; 恶性更高 7/14; Wilcoxon p=1
+
+[C3] 恶性细胞中 19p13.3 增益 vs 非增益
+  配对样本 n=5; 中位差(增益−非增益)=0.555; 增益更高 5/5; Wilcoxon p=0.0625
+  细胞级 MixedLM（lbfgs）: beta=0.082 SE=0.005 p=1.02e-52; cells=67354
+  敏感性（每单元 >= 30 细胞，细胞均值）: 配对 n=15; 中位差=0.067; 增益更高 11/15; Wilcoxon p=0.00336
+  样本内 LONP1 ~ seg_19p13_3 Spearman: 中位 0.032，范围 -0.128–0.242，>0 的样本 23/38
+
+[C4] E-MTAB-11948 同患者 癌恶性上皮 vs 癌旁正常上皮
+  patient1: malignant_epi n=6865 log2CPM=5.195; nonmal_epi_tumor n=97 log2CPM=6.301; mal_gain19p13_3 n=1000 log2CPM=5.678; mal_nogain19p13_3 n=5865 log2CPM=5.122; normal_epi n=699 log2CPM=3.931
+  patient2: malignant_epi n=502 log2CPM=3.825; nonmal_epi_tumor n=1516 log2CPM=4.137; mal_gain19p13_3 n=4 log2CPM=5.055; mal_nogain19p13_3 n=498 log2CPM=3.821; normal_epi n=2645 log2CPM=3.493
+  patient3: malignant_epi n=4686 log2CPM=4.613; nonmal_epi_tumor n=2982 log2CPM=4.531; mal_gain19p13_3 n=1 log2CPM=0.000; mal_nogain19p13_3 n=4685 log2CPM=4.613
+
+[HSIL]
+           sample  n_cells  log2CPM_LONP1
+GSM6360684_HSIL_1      584          4.666
+GSM6360685_HSIL_2     3566          5.166

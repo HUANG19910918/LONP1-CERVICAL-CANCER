@@ -1,0 +1,4 @@
+cells tested=3000; nonzero entries=7746671; fraction within 0.01 of integer=1.0000
+min recovered nonzero=1.0000; median=1.000
+colSums(round(recovered)) vs nCount_RNA: median rel diff=0.00e+00, max=0.00e+00
+nCount_RNA integer=TRUE; nFeature_RNA matches nnz=TRUE

@@ -1,0 +1,9 @@
+MendelianRandomization 0.10.0; estimates compared: 182 (Wald 86, IVW 96, Egger/WM 61)
+IVW/Wald beta  max |diff|: 4.44e-16 (n=182)  max rel: 5.22e-14
+IVW/Wald SE    max |diff|: 7.69e-05 (n=182)  max rel: 1.84e-05
+IVW/Wald P     max |diff|: 3.33e-16 (n=182)
+Cochran Q      max |diff|: 1.07e-14 (n=96) ; Q P max |diff|: 3.97e-15 (n=96)
+Egger slope    max |diff|: 7.11e-14 (n=61) ; SE: 9.77e-14 (n=61)
+Egger intercept max |diff|: 5.88e-15 (n=61) ; intercept P: 2.39e-15 (n=61)
+Weighted median beta max |diff|: 2.91e-16 (n=61) ; SE (bootstrap): 3.97e-02 (n=61)
+FDR<0.05 set / significance at P<0.05 identical: TRUE

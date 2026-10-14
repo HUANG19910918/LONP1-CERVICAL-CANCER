@@ -1,0 +1,128 @@
+An object of class Seurat 
+40155 features across 361897 samples within 1 assay 
+Active assay: RNA (40155 features, 0 variable features)
+ 2 layers present: counts, data
+assays: RNA 
+== assay RNA class Assay 
+layers: counts data 
+counts: 40155 x 361897; nonzero sample min=0.080 max=8.821; all integer=FALSE
+data: 40155 x 361897; nonzero sample min=0.080 max=8.821; all integer=FALSE
+meta columns: orig.ident nCount_RNA nFeature_RNA stim sample Group isolate 
+-- orig.ident --
+
+ascus.WL1229n23.10X5                 CC01                 CC02 
+                8346                 7914                12196 
+                CC05                 CC06                 CC07 
+               10252                 6678                 9268 
+                CC09                 CC10                 CC11 
+               10338                10413                10692 
+           CIN.III.1        CIN1.ZDM.0229         CIN3.RQ.0311 
+                7779                 5603                 7449 
+       CIN4.YWP.0316         CIN6.ZB.0320        CIN7.YMX.0322 
+                4495                 6371                 7041 
+               CON.1                CON.2                CON.3 
+               10728                 7519                 5445 
+               CON.5                CON.6               HSIL.2 
+                2137                 3910                 1606 
+     hsil.GQY0122n28  hsil.QX0111n25.10X5      hsil.YLY0123n29 
+                6544                 4844                 9632 
+               ICC.1                ICC.2                ICC.3 
+                4993                 3996                 7033 
+               ICC.4                ICC.5                ICC.6 
+                6081                 8108                 4083 
+                 LXQ                MIC.1                MIC.2 
+                9330                 6190                 4252 
+               MIC.3                MIC.4                MIC.5 
+                4461                 7051                 3093 
+     P1.Normal.scRNA      P2.Normal.scRNA       P2.Tumor.scRNA 
+                3184                 2955                 5539 
+     P3.Normal.scRNA       P3.Tumor.scRNA      P4.Normal.scRNA 
+                5038                 3550                 3155 
+      P4.Tumor.scRNA       P5.Tumor.scRNA      P6.Normal.scRNA 
+                4866                 4832                 9523 
+             S66.DXY              S73.FHF              S84.ZAH 
+               14681                12482                 5181 
+              S91.WJ                  XDF                  XJF 
+                7763                10779                10380 
+                 ZWH 
+               12118 
+-- stim --
+
+ascus.WL1229n23.10X5                 CC01                 CC02 
+                8346                 7914                12196 
+                CC05                 CC06                 CC07 
+               10252                 6678                 9268 
+                CC09                 CC10                 CC11 
+               10338                10413                10692 
+           CIN.III.1        CIN1.ZDM.0229         CIN3.RQ.0311 
+                7779                 5603                 7449 
+       CIN4.YWP.0316         CIN6.ZB.0320        CIN7.YMX.0322 
+                4495                 6371                 7041 
+               CON.1                CON.2                CON.3 
+               10728                 7519                 5445 
+               CON.5                CON.6               HSIL.2 
+                2137                 3910                 1606 
+     hsil.GQY0122n28  hsil.QX0111n25.10X5      hsil.YLY0123n29 
+                6544                 4844                 9632 
+               ICC.1                ICC.2                ICC.3 
+                4993                 3996                 7033 
+               ICC.4                ICC.5                ICC.6 
+                6081                 8108                 4083 
+                 LXQ                MIC.1                MIC.2 
+                9330                 6190                 4252 
+               MIC.3                MIC.4                MIC.5 
+                4461                 7051                 3093 
+     P1.Normal.scRNA      P2.Normal.scRNA       P2.Tumor.scRNA 
+                3184                 2955                 5539 
+     P3.Normal.scRNA       P3.Tumor.scRNA      P4.Normal.scRNA 
+                5038                 3550                 3155 
+      P4.Tumor.scRNA       P5.Tumor.scRNA      P6.Normal.scRNA 
+                4866                 4832                 9523 
+             S66.DXY              S73.FHF              S84.ZAH 
+               14681                12482                 5181 
+              S91.WJ                  XDF                  XJF 
+                7763                10779                10380 
+                 ZWH 
+               12118 
+-- sample --
+
+    CC    CON    SIL 
+155879  53594 152424 
+-- Group --
+
+ CC_Patient_01  CC_Patient_02  CC_Patient_03  CC_Patient_04  CC_Patient_05 
+          7914          12196          10252           6678           9268 
+ CC_Patient_06  CC_Patient_07  CC_Patient_08  CC_Patient_09  CC_Patient_10 
+         10338          10413          10692           5539           3550 
+ CC_Patient_11  CC_Patient_12  CC_Patient_13  CC_Patient_14  CC_Patient_15 
+          4866           4832           4993           3996           7033 
+ CC_Patient_16  CC_Patient_17  CC_Patient_18  CC_Patient_19  CC_Patient_20 
+          6081           8108           4083           6190           4252 
+ CC_Patient_21  CC_Patient_22  CC_Patient_23   CON_Donor_01   CON_Donor_02 
+          4461           7051           3093           3184           2955 
+  CON_Donor_03   CON_Donor_04   CON_Donor_05   CON_Donor_06   CON_Donor_07 
+          5038           3155           9523          10728           7519 
+  CON_Donor_08   CON_Donor_09   CON_Donor_10 SIL_Patient_01 SIL_Patient_02 
+          5445           2137           3910          14681          12482 
+SIL_Patient_03 SIL_Patient_04 SIL_Patient_05 SIL_Patient_06 SIL_Patient_07 
+          5181           7763           8346           5603           7449 
+SIL_Patient_08 SIL_Patient_09 SIL_Patient_10 SIL_Patient_11 SIL_Patient_12 
+          4495           6371           7041           7779           6544 
+SIL_Patient_13 SIL_Patient_14 SIL_Patient_15 SIL_Patient_16 SIL_Patient_17 
+          4844           9632           9330          10779          10380 
+SIL_Patient_18 SIL_Patient_19 
+         12118           1606 
+-- isolate --
+
+ CC_01  CC_02  CC_03  CC_04  CC_05  CC_06  CC_07  CC_08  CC_09  CC_10  CC_11 
+  7914  12196  10252   6678   9268  10338  10413  10692   5539   3550   4866 
+ CC_12  CC_13  CC_14  CC_15  CC_16  CC_17  CC_18  CC_19  CC_20  CC_21  CC_22 
+  4832   4993   3996   7033   6081   8108   4083   6190   4252   4461   7051 
+ CC_23 CON_01 CON_02 CON_03 CON_04 CON_05 CON_06 CON_07 CON_08 CON_09 CON_10 
+  3093   3184   2955   5038   3155   9523  10728   7519   5445   2137   3910 
+SIL_01 SIL_02 SIL_03 SIL_04 SIL_05 SIL_06 SIL_07 SIL_08 SIL_09 SIL_10 SIL_11 
+ 14681  12482   5181   7763   8346   5603   7449   4495   6371   7041   7779 
+SIL_12 SIL_13 SIL_14 SIL_15 SIL_16 SIL_17 SIL_18 SIL_19 
+  6544   4844   9632   9330  10779  10380  12118   1606 
+HPV features: HPV33.E6 HPV33.E7 HPV33.E1 HPV33.E2 HPV18gp3 
+LONP1 present: TRUE 

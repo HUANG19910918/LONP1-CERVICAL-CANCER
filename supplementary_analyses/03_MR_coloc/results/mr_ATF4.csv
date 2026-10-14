@@ -1,0 +1,41 @@
+gene,exposure,outcome,cases,controls,pop,n_snp,method,b,se,p,OR,OR_lo,OR_hi,mean_F,r2_exposure,r2_outcome,steiger_correct_direction,snps,Q,Q_p,egger_b,egger_se,egger_int,egger_int_p,wm_b,wm_se,note
+ATF4,eQTLGen_blood,FinnGen_CC,878.0,222078.0,EUR,1.0,Wald ratio,-0.003378815588210166,0.3794254528880044,0.9928948647476684,0.9966268861856242,0.47376081078415705,2.0965540577829254,234.35935744000005,0.008131447047083922,2.2669146307616277e-08,True,rs1028320,,,,,,,,,
+ATF4,eQTLGen_blood,FinnGen_CIS,3701.0,219058.0,EUR,1.0,Wald ratio,0.14652891278016464,0.18569716737733283,0.4300684230887939,1.1578084057944362,0.8045778610814802,1.6661163193409054,234.35935744000005,0.008131447047083922,4.276757120749223e-05,True,rs1028320,,,,,,,,,
+ATF4,eQTLGen_blood,FinnGen_SCC,222.0,222078.0,EUR,1.0,Wald ratio,-0.007078382969438991,0.7523765708938741,0.992493587131922,0.9929466097791092,0.22724274720544896,4.338721398137476,234.35935744000005,0.008131447047083922,9.977425688735754e-08,True,rs1028320,,,,,,,,,
+ATF4,eQTLGen_blood,FinnGen_ADC,142.0,222078.0,EUR,1.0,Wald ratio,0.16009338007810953,0.9405737143995586,0.8648463854401237,1.173620458645178,0.18573560404857403,7.415837087380946,234.35935744000005,0.008131447047083922,5.10350069188762e-05,True,rs1028320,,,,,,,,,
+ATF4,eQTLGen_blood,UKB_C53,273.0,420258.0,EUR,1.0,Wald ratio,-0.44238835961676304,0.6812766023700692,0.5161108484270409,0.6425000659179328,0.16902806711208818,2.4422354331887517,234.35935744000005,0.008131447047083922,0.0003862353769758464,True,rs1028320,,,,,,,,,
+ATF4,eQTLGen_blood,UKB_180.1,299.0,198725.0,EUR,1.0,Wald ratio,-0.42774753414466327,0.6519213794385726,0.5117381548549904,0.6519759956997421,0.18167908130843724,2.3396898305921234,234.35935744000005,0.008131447047083922,0.0003603709806579514,True,rs1028320,,,,,,,,,
+ATF4,eQTLGen_blood,UKB_180.3,2186.0,198725.0,EUR,1.0,Wald ratio,-0.15810620070121797,0.24264041410545228,0.5146547085395945,0.8537591073378418,0.5306347156037934,1.3736466761940171,234.35935744000005,0.008131447047083922,4.9089800721991896e-05,True,rs1028320,,,,,,,,,
+ATF4,eQTLGen_blood,BBJ_CeC,967.0,60614.0,EAS,5.0,IVW (multiplicative RE),-0.24937785709776955,0.7922727028573244,0.752941870693951,0.7792854592041188,0.16493029404141632,3.6820756941988857,107.057717838,0.018733592105330203,0.00330010880608742,True,rs1028320;rs2413595;rs73885269;rs17001167;rs6001621,12.295320955769844,0.015285121409643535,1.6947570547885915,5.216776835540375,-0.22493036388737211,0.7052355084384019,-0.17448539847450362,0.47364822838317633,
+ATF4,GTEx_blood,FinnGen_CC,,,,,,,,,,,,,,,,,,,,,,,,,no instrument at P<5e-8
+ATF4,GTEx_blood,FinnGen_CIS,,,,,,,,,,,,,,,,,,,,,,,,,no instrument at P<5e-8
+ATF4,GTEx_blood,FinnGen_SCC,,,,,,,,,,,,,,,,,,,,,,,,,no instrument at P<5e-8
+ATF4,GTEx_blood,FinnGen_ADC,,,,,,,,,,,,,,,,,,,,,,,,,no instrument at P<5e-8
+ATF4,GTEx_blood,UKB_C53,,,,,,,,,,,,,,,,,,,,,,,,,no instrument at P<5e-8
+ATF4,GTEx_blood,UKB_180.1,,,,,,,,,,,,,,,,,,,,,,,,,no instrument at P<5e-8
+ATF4,GTEx_blood,UKB_180.3,,,,,,,,,,,,,,,,,,,,,,,,,no instrument at P<5e-8
+ATF4,GTEx_blood,BBJ_CeC,,,,,,,,,,,,,,,,,,,,,,,,,no instrument at P<5e-8
+ATF4,GTEx_uterus,FinnGen_CC,,,,,,,,,,,,,,,,,,,,,,,,,no instrument at P<5e-8
+ATF4,GTEx_uterus,FinnGen_CIS,,,,,,,,,,,,,,,,,,,,,,,,,no instrument at P<5e-8
+ATF4,GTEx_uterus,FinnGen_SCC,,,,,,,,,,,,,,,,,,,,,,,,,no instrument at P<5e-8
+ATF4,GTEx_uterus,FinnGen_ADC,,,,,,,,,,,,,,,,,,,,,,,,,no instrument at P<5e-8
+ATF4,GTEx_uterus,UKB_C53,,,,,,,,,,,,,,,,,,,,,,,,,no instrument at P<5e-8
+ATF4,GTEx_uterus,UKB_180.1,,,,,,,,,,,,,,,,,,,,,,,,,no instrument at P<5e-8
+ATF4,GTEx_uterus,UKB_180.3,,,,,,,,,,,,,,,,,,,,,,,,,no instrument at P<5e-8
+ATF4,GTEx_uterus,BBJ_CeC,,,,,,,,,,,,,,,,,,,,,,,,,no instrument at P<5e-8
+ATF4,GTEx_vagina,FinnGen_CC,,,,,,,,,,,,,,,,,,,,,,,,,no instrument at P<5e-8
+ATF4,GTEx_vagina,FinnGen_CIS,,,,,,,,,,,,,,,,,,,,,,,,,no instrument at P<5e-8
+ATF4,GTEx_vagina,FinnGen_SCC,,,,,,,,,,,,,,,,,,,,,,,,,no instrument at P<5e-8
+ATF4,GTEx_vagina,FinnGen_ADC,,,,,,,,,,,,,,,,,,,,,,,,,no instrument at P<5e-8
+ATF4,GTEx_vagina,UKB_C53,,,,,,,,,,,,,,,,,,,,,,,,,no instrument at P<5e-8
+ATF4,GTEx_vagina,UKB_180.1,,,,,,,,,,,,,,,,,,,,,,,,,no instrument at P<5e-8
+ATF4,GTEx_vagina,UKB_180.3,,,,,,,,,,,,,,,,,,,,,,,,,no instrument at P<5e-8
+ATF4,GTEx_vagina,BBJ_CeC,,,,,,,,,,,,,,,,,,,,,,,,,no instrument at P<5e-8
+ATF4,GTEx_fibroblast,FinnGen_CC,,,,,,,,,,,,,,,,,,,,,,,,,no instrument at P<5e-8
+ATF4,GTEx_fibroblast,FinnGen_CIS,,,,,,,,,,,,,,,,,,,,,,,,,no instrument at P<5e-8
+ATF4,GTEx_fibroblast,FinnGen_SCC,,,,,,,,,,,,,,,,,,,,,,,,,no instrument at P<5e-8
+ATF4,GTEx_fibroblast,FinnGen_ADC,,,,,,,,,,,,,,,,,,,,,,,,,no instrument at P<5e-8
+ATF4,GTEx_fibroblast,UKB_C53,,,,,,,,,,,,,,,,,,,,,,,,,no instrument at P<5e-8
+ATF4,GTEx_fibroblast,UKB_180.1,,,,,,,,,,,,,,,,,,,,,,,,,no instrument at P<5e-8
+ATF4,GTEx_fibroblast,UKB_180.3,,,,,,,,,,,,,,,,,,,,,,,,,no instrument at P<5e-8
+ATF4,GTEx_fibroblast,BBJ_CeC,,,,,,,,,,,,,,,,,,,,,,,,,no instrument at P<5e-8

@@ -1,0 +1,66 @@
+[rho_raw | GOBP] n_sig(padj<0.05, NES>0)=254, NES<0=727
+   GOBP_RIBONUCLEOPROTEIN_COMPLEX_BIOGENESIS                              NES=3.37 padj=8.7e-63 size=430
+   GOBP_RIBOSOME_BIOGENESIS                                               NES=3.30 padj=7.7e-46 size=285
+   GOBP_CYTOPLASMIC_TRANSLATION                                           NES=3.50 padj=5.2e-41 size=165
+   GOBP_MITOCHONDRIAL_GENE_EXPRESSION                                     NES=3.34 padj=2.4e-33 size=148
+   GOBP_MITOCHONDRIAL_TRANSLATION                                         NES=3.44 padj=3.0e-32 size=120
+   GOBP_RRNA_PROCESSING                                                   NES=3.14 padj=4.2e-30 size=204
+   GOBP_RRNA_METABOLIC_PROCESS                                            NES=2.99 padj=1.0e-29 size=247
+   GOBP_PROTEIN_RNA_COMPLEX_ORGANIZATION                                  NES=3.05 padj=2.5e-28 size=207
+   GOBP_OXIDATIVE_PHOSPHORYLATION                                         NES=3.26 padj=6.3e-26 size=108
+   GOBP_CELLULAR_RESPIRATION                                              NES=2.75 padj=4.5e-24 size=280
+[rho_raw | REACTOME] n_sig(padj<0.05, NES>0)=236, NES<0=141
+   REACTOME_TRANSLATION                                                   NES=3.90 padj=1.0e-88 size=322
+   REACTOME_RRNA_PROCESSING                                               NES=3.65 padj=5.0e-53 size=192
+   REACTOME_EUKARYOTIC_TRANSLATION_ELONGATION                             NES=3.78 padj=2.8e-49 size=92
+   REACTOME_RESPONSE_OF_EIF2AK4_GCN2_TO_AMINO_ACID_DEFICIENCY             NES=3.78 padj=9.0e-47 size=99
+   REACTOME_SELENOAMINO_ACID_METABOLISM                                   NES=3.74 padj=9.0e-47 size=108
+   REACTOME_EUKARYOTIC_TRANSLATION_INITIATION                             NES=3.68 padj=2.1e-46 size=118
+   REACTOME_RIBOSOME_ASSOCIATED_QUALITY_CONTROL                           NES=3.58 padj=2.5e-44 size=137
+   REACTOME_INFLUENZA_VIRAL_RNA_TRANSCRIPTION_AND_REPLICATION             NES=3.58 padj=1.9e-42 size=132
+   REACTOME_REGULATION_OF_EXPRESSION_OF_SLITS_AND_ROBOS                   NES=3.50 padj=1.4e-40 size=153
+   REACTOME_SRP_DEPENDENT_COTRANSLATIONAL_PROTEIN_TARGETING_TO_MEMBRANE   NES=3.63 padj=1.6e-40 size=110
+[rho_partial_A | GOBP] n_sig(padj<0.05, NES>0)=290, NES<0=907
+   GOBP_RIBONUCLEOPROTEIN_COMPLEX_BIOGENESIS                              NES=3.38 padj=5.2e-68 size=430
+   GOBP_RIBOSOME_BIOGENESIS                                               NES=3.31 padj=4.4e-48 size=285
+   GOBP_CYTOPLASMIC_TRANSLATION                                           NES=3.46 padj=1.8e-41 size=165
+   GOBP_MITOCHONDRIAL_GENE_EXPRESSION                                     NES=3.38 padj=5.6e-37 size=148
+   GOBP_MITOCHONDRIAL_TRANSLATION                                         NES=3.44 padj=4.4e-36 size=120
+   GOBP_RRNA_PROCESSING                                                   NES=3.15 padj=1.9e-32 size=204
+   GOBP_RRNA_METABOLIC_PROCESS                                            NES=3.03 padj=1.9e-32 size=247
+   GOBP_PROTEIN_RNA_COMPLEX_ORGANIZATION                                  NES=3.08 padj=3.5e-30 size=207
+   GOBP_OXIDATIVE_PHOSPHORYLATION                                         NES=3.27 padj=6.4e-28 size=108
+   GOBP_ATP_SYNTHESIS_COUPLED_ELECTRON_TRANSPORT                          NES=3.29 padj=3.8e-26 size=84
+[rho_partial_A | REACTOME] n_sig(padj<0.05, NES>0)=289, NES<0=175
+   REACTOME_TRANSLATION                                                   NES=3.91 padj=2.0e-99 size=322
+   REACTOME_RRNA_PROCESSING                                               NES=3.62 padj=3.8e-55 size=192
+   REACTOME_EUKARYOTIC_TRANSLATION_INITIATION                             NES=3.66 padj=4.1e-49 size=118
+   REACTOME_RIBOSOME_ASSOCIATED_QUALITY_CONTROL                           NES=3.59 padj=2.8e-46 size=137
+   REACTOME_EUKARYOTIC_TRANSLATION_ELONGATION                             NES=3.66 padj=2.1e-44 size=92
+   REACTOME_SELENOAMINO_ACID_METABOLISM                                   NES=3.60 padj=1.0e-43 size=108
+   REACTOME_REGULATION_OF_EXPRESSION_OF_SLITS_AND_ROBOS                   NES=3.47 padj=3.7e-43 size=153
+   REACTOME_INFLUENZA_VIRAL_RNA_TRANSCRIPTION_AND_REPLICATION             NES=3.51 padj=6.5e-43 size=132
+   REACTOME_RESPONSE_OF_EIF2AK4_GCN2_TO_AMINO_ACID_DEFICIENCY             NES=3.63 padj=1.8e-41 size=99
+   REACTOME_INFLUENZA_INFECTION                                           NES=3.41 padj=6.6e-40 size=154
+[rho_partial_B | GOBP] n_sig(padj<0.05, NES>0)=239, NES<0=451
+   GOBP_RIBONUCLEOPROTEIN_COMPLEX_BIOGENESIS                              NES=3.27 padj=1.9e-60 size=430
+   GOBP_RIBOSOME_BIOGENESIS                                               NES=3.22 padj=7.1e-45 size=285
+   GOBP_CYTOPLASMIC_TRANSLATION                                           NES=3.42 padj=1.8e-39 size=165
+   GOBP_MITOCHONDRIAL_TRANSLATION                                         NES=3.45 padj=7.9e-37 size=120
+   GOBP_MITOCHONDRIAL_GENE_EXPRESSION                                     NES=3.36 padj=7.9e-35 size=148
+   GOBP_RRNA_METABOLIC_PROCESS                                            NES=2.92 padj=2.7e-29 size=247
+   GOBP_RRNA_PROCESSING                                                   NES=3.05 padj=4.5e-28 size=204
+   GOBP_OXIDATIVE_PHOSPHORYLATION                                         NES=3.25 padj=5.6e-28 size=108
+   GOBP_PROTEIN_RNA_COMPLEX_ORGANIZATION                                  NES=2.98 padj=8.8e-27 size=207
+   GOBP_ATP_SYNTHESIS_COUPLED_ELECTRON_TRANSPORT                          NES=3.31 padj=4.1e-26 size=84
+[rho_partial_B | REACTOME] n_sig(padj<0.05, NES>0)=266, NES<0=106
+   REACTOME_TRANSLATION                                                   NES=3.93 padj=1.9e-101 size=322
+   REACTOME_RRNA_PROCESSING                                               NES=3.58 padj=2.3e-51 size=192
+   REACTOME_EUKARYOTIC_TRANSLATION_INITIATION                             NES=3.72 padj=3.1e-49 size=118
+   REACTOME_RIBOSOME_ASSOCIATED_QUALITY_CONTROL                           NES=3.66 padj=2.3e-47 size=137
+   REACTOME_REGULATION_OF_EXPRESSION_OF_SLITS_AND_ROBOS                   NES=3.59 padj=1.2e-46 size=153
+   REACTOME_EUKARYOTIC_TRANSLATION_ELONGATION                             NES=3.66 padj=2.9e-46 size=92
+   REACTOME_SELENOAMINO_ACID_METABOLISM                                   NES=3.67 padj=2.0e-45 size=108
+   REACTOME_INFLUENZA_VIRAL_RNA_TRANSCRIPTION_AND_REPLICATION             NES=3.59 padj=2.6e-44 size=132
+   REACTOME_RESPONSE_OF_EIF2AK4_GCN2_TO_AMINO_ACID_DEFICIENCY             NES=3.60 padj=3.0e-42 size=99
+   REACTOME_METABOLISM_OF_AMINO_ACIDS_AND_DERIVATIVES                     NES=3.08 padj=6.7e-42 size=336

@@ -1,0 +1,30 @@
+sample   label_grade cnv_class  SIL_pct_malignant_like  n_cells  log2CPM_LONP1
+SIL_19 HSIL_labelled  CNV_high                   47.43     1421           3.81
+SIL_11 HSIL_labelled   CNV_low                    2.32     3275           4.01
+SIL_09       unknown  CNV_high                   71.81     1004           4.14
+SIL_03       unknown   CNV_low                    9.42     3268           4.16
+SIL_17       unknown   CNV_low                   10.98      574           4.19
+SIL_12 HSIL_labelled  CNV_high                   72.79     2179           4.27
+SIL_05         ASCUS   CNV_low                    8.00     3900           4.37
+SIL_07       unknown   CNV_low                    6.41     1420           4.39
+SIL_16       unknown   CNV_low                   12.24      433           4.40
+SIL_15       unknown  CNV_high                   22.02     1894           4.53
+SIL_10       unknown   CNV_low                    2.38     3315           4.65
+SIL_14 HSIL_labelled   CNV_low                    7.83      511           4.69
+SIL_13 HSIL_labelled   CNV_low                    8.57      863           4.77
+SIL_04       unknown   CNV_low                    4.68     1217           4.79
+SIL_02       unknown   CNV_low                    3.49      545           4.80
+SIL_01       unknown   CNV_low                    8.34      887           4.82
+SIL_18       unknown   CNV_low                   14.48      960           4.88
+SIL_06       unknown   CNV_low                    5.61      481           4.92
+
+正常 n=8 中位 3.599；癌恶性 n=23 中位 3.934
+label_grade=HSIL_labelled: n=5 中位 4.268; vs 正常 MWU p=0.0451; vs 癌 MWU p=0.107
+label_grade=unknown: n=12 中位 4.588; vs 正常 MWU p=0.000714; vs 癌 MWU p=0.000904
+  HSIL_labelled vs unknown: MWU p=0.195
+cnv_class=CNV_high: n=4 中位 4.205; vs 正常 MWU p=0.0727; vs 癌 MWU p=0.243
+cnv_class=CNV_low: n=14 中位 4.672; vs 正常 MWU p=0.0006; vs 癌 MWU p=0.00048
+  CNV_high vs CNV_low: MWU p=0.0614
+
+去除明确 HSIL 且去除 CNV-high 后的 SIL: n=11 中位 4.650; vs 正常 p=0.000794; vs 癌 p=0.00105; 三组 Kruskal p=0.00116
+SIL 内 LONP1 与 CNV 克隆比例的 Spearman rho=-0.337 p=0.171（n=18）

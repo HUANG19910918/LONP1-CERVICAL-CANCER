@@ -1,0 +1,20 @@
+MIN_CELLS=100; 纳入单元: malignant_epi=23, SIL_epi=18, normal_epi=8; 排除（细胞不足）: CON_03, SIL_08
+               count   mean    std    min    25%    50%    75%    max
+category                                                             
+SIL_epi         18.0  4.478  0.332  3.811  4.212  4.464  4.787  4.916
+malignant_epi   23.0  3.830  0.687  2.424  3.354  3.934  4.241  5.451
+normal_epi       8.0  3.721  0.472  3.317  3.383  3.599  3.832  4.728
+Kruskal–Wallis p=0.000434; 趋势 Spearman rho=-0.179 p=0.219
+  normal_epi vs SIL_epi: 中位 3.599 vs 4.464, MWU p=0.000593
+  SIL_epi vs malignant_epi: 中位 4.464 vs 3.934, MWU p=0.000669
+  normal_epi vs malignant_epi: 中位 3.599 vs 3.934, MWU p=0.707
+细胞级 MixedLM lonp1 ~ 组序: beta=-0.0045 SE=0.0095 p=0.631; cells=89488
+
+[同患者配对] P3: CON_03 vs CC_10；P4: CON_04 vs CC_11（不受 MIN 限制，描述性）
+  CON_03 正常上皮 n=86 log2CPM=2.968  vs  CC_10 恶性上皮 n=326 log2CPM=2.424
+  CON_04 正常上皮 n=215 log2CPM=4.011  vs  CC_11 恶性上皮 n=648 log2CPM=4.289
+
+[合并 C1，6 数据集] 恶性 n=38 中位 4.081 vs 正常 n=14 中位 3.852; OLS(+dataset) diff=0.132 (SE 0.205, 95% CI -0.280–0.545) p=0.521; Mann–Whitney p=0.451
+  E-MTAB-11948: 恶性 n=3 中位 4.613 vs 正常 n=2 中位 3.712; MWU p=0.4
+  GSE208653: 恶性 n=3 中位 4.073 vs 正常 n=4 中位 4.544; MWU p=0.229
+  GSE333892: 恶性 n=23 中位 3.934 vs 正常 n=8 中位 3.599; MWU p=0.707
