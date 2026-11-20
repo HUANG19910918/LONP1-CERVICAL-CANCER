@@ -1,0 +1,32 @@
+gene,claimed_theme,source_title,url
+IDO1,immune infiltration (CD8 T cells),Tumor-Infiltrating CD8+ T Cells Driven by the Immune Checkpoint-Associated Gene IDO1 Are Associated With Cervical Cancer Prognosis,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8578845/
+CD3G,immune infiltration / tumor microenvironment,A novel prognostic biomarker CD3G that correlates with the tumor microenvironment in cervical cancer,https://pmc.ncbi.nlm.nih.gov/articles/PMC9513466/
+PLA2G2D,immune infiltration / immune checkpoints,Metabolic Molecule PLA2G2D Is a Potential Prognostic Biomarker Correlating With Immune Cell Infiltration and the Expression of Immune Checkpoint Genes in CSCC,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8558485/
+SLC24A3,immune infiltration,Pain-Related Gene SLC24A3 Is a Prognostic Biomarker and Correlated with Immune Infiltrates in CESC,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9928512/
+RRM2,cell cycle / DNA replication (WGCNA),Potential mechanism of RRM2 for promoting Cervical Cancer based on WGCNA,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7484645/
+MPC1,ferroptosis / tumor microenvironment,Exploring MPC1 as a potential ferroptosis-linked biomarker in the cervical cancer tumor microenvironment,https://link.springer.com/article/10.1186/s12885-024-12622-x
+SLC30A1,zinc transport / prognosis,The correlation and role analysis of SLC30A1 and SLC30A10 in cervical carcinoma,https://www.jcancer.org/v13p1031.htm
+SLC30A10,zinc transport / prognosis,The correlation and role analysis of SLC30A1 and SLC30A10 in cervical carcinoma,https://www.jcancer.org/v13p1031.htm
+S1PR2,immune infiltration,Down-regulation of S1PR2 is correlated with poor prognosis and immune infiltrates in CESC,https://pmc.ncbi.nlm.nih.gov/articles/PMC10226337
+CDC45,cell cycle / DNA replication,Expression and prognosis of CDC45 in cervical cancer based on the GEO database,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8420875/
+SLC7A11,ferroptosis / immune infiltration,SLC7A11 is a potential therapeutic target and prognostic biomarker correlated with immune cell infiltration in cervical cancer,https://link.springer.com/article/10.1007/s12672-025-01888-7
+GJA1,prognosis,GJA1 Expression and Its Prognostic Value in Cervical Cancer,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7709497/
+ESM1,angiogenesis / VEGF,Targeting ESM1/VEGFα signaling axis: angiogenesis in cervical squamous cell carcinoma,https://www.jcancer.org/v14p1725.htm
+DHCR7,cholesterol metabolism / prognosis,High DHCR7 Expression Predicts Poor Prognosis for Cervical Cancer,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9508458/
+GALNT2,O-glycosylation / prognosis,O-Glycosylating Enzyme GALNT2 Predicts Worse Prognosis in Cervical Cancer,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9469784/
+RPS27A,ribosome / prognosis (HPV16),High RPS27A Expression Predicts Poor Prognosis in Patients With HPV Type 16 Cervical Cancer,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8593198/
+NUSAP1,cell cycle / prognosis,Decreased Expression of NUSAP1 Predicts Poor Overall Survival in Cervical Cancer,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7086256/
+GSS,glutathione metabolism / ferroptosis,Identification of Glutathione Synthetase as a Therapeutic Target for Cervical Cancer,https://pmc.ncbi.nlm.nih.gov/articles/PMC12722599/
+TPM3,immune infiltration / malignant behavior,TPM3: a novel prognostic biomarker of cervical cancer that correlates with immune infiltration,https://pmc.ncbi.nlm.nih.gov/articles/PMC10408471/
+CNKSR2,immune infiltration,CNKSR2 expression is correlated with immune infiltrates in Cervical Cancer as a favorable prognostic factor,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10758040/
+TMEM33,proliferation,High Expression of TMEM33 Predicts Poor Prognosis and Promotes Cell Proliferation in Cervical Cancer,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9271802/
+CBX7,epithelial-mesenchymal transition,Decreased chromobox homologue 7 expression is associated with EMT and poor prognosis in cervical cancer,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7957191/
+KIF14,cell cycle,Dysregulation of KIF14 regulates the cell cycle and predicts poor prognosis in cervical cancer,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8427749/
+MCM3,cell cycle / DNA replication,Bioinformatics Analysis Reveals MCM3 as an Important Prognostic Marker in Cervical Cancer,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8523256/
+P4HA2,hypoxia,A P4HA2 hypoxia signature derived from single cell atlas stratifies subtypes in CSCC,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12910786/
+TFRC,iron metabolism / ferroptosis,The TFRC as a prognostic biomarker and potential therapeutic target in cervical cancer,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12037406/
+TCP11,proliferation / apoptosis,Increased TCP11 gene expression can inhibit the proliferation and migration of cervical cancer cells,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10496356/
+SMYD2,proliferation,SMYD2 promotes cervical cancer growth by stimulating cell proliferation,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6749660/
+SPP1,immune / macrophages,Comprehensive Analysis to Identify SPP1 as a Prognostic Biomarker in Cervical Cancer,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8764398/
+RFC5,immune-related / DNA replication,Construction of a prognostic signature of RFC5 immune-related genes in patients with cervical cancer,https://pmc.ncbi.nlm.nih.gov/articles/PMC12412830
+LONP1,mitochondrial protein homeostasis,This study (index case),

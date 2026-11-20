@@ -1,0 +1,149 @@
+genes with expression+CN: 19933 (17262 with cytoband); samples n=290 (model A), n=290 (model B)
+gene sets from genesets_all.gmt: 5420
+gene sets with 15-500 measured genes: 5142
+literature seeds found: 30; not found: []
+systematic candidates (alteration freq >= 0.25, CN-expr rho >= 0.3, expressed): 4020; arms: {'1p': 344, '1q': 327, '3p': 289, '19q': 278, '3q': 274, '11q': 204, '10q': 196, '4q': 195, '19p': 189, '8q': 176, '17p': 161, '6q': 161, '20q': 160, '11p': 146, '2q': 126, '13q': 115, '4p': 114, '2p': 92, '20p': 79, '8p': 75, '6p': 63, '22q': 63, '5p': 63, '18q': 60, '5q': 39, '15q': 28, 'Xq': 2, 'Yq': 1}
+seeds: {'systematic': 120, 'random': 100, 'literature': 30, 'LONP1': 1}
+seed 1/251 done (9 s)
+seed 11/251 done (43 s)
+seed 21/251 done (74 s)
+seed 31/251 done (101 s)
+seed 41/251 done (125 s)
+seed 51/251 done (145 s)
+seed 61/251 done (168 s)
+seed 71/251 done (189 s)
+seed 81/251 done (212 s)
+seed 91/251 done (231 s)
+seed 101/251 done (244 s)
+seed 111/251 done (263 s)
+seed 121/251 done (284 s)
+seed 131/251 done (300 s)
+seed 141/251 done (312 s)
+seed 151/251 done (327 s)
+seed 161/251 done (347 s)
+seed 171/251 done (364 s)
+seed 181/251 done (382 s)
+seed 191/251 done (394 s)
+seed 201/251 done (414 s)
+seed 211/251 done (429 s)
+seed 221/251 done (444 s)
+seed 231/251 done (454 s)
+seed 241/251 done (469 s)
+seed 251/251 done (482 s)
+[validation] LONP1 raw: n=19932 r=1.00000
+[validation] LONP1 A: n=19932 r=1.00000
+
+1. POSITIONAL: class by group (dominant = >=50% of top-50 raw partners on own arm; enriched = binomial P<1e-3)
+positional  dominant  enriched  none  All
+group                                    
+LONP1              1         0     0    1
+literature         8         7    15   30
+random            31        26    43  100
+systematic        78        39     3  120
+All              118        72    61  251
+
+   median same-arm fraction of top-50 partners: raw -> model A -> model B (chance = arm_gene_fraction)
+            arm_gene_fraction  top50_same_arm_raw  top50_same_arm_A  top50_same_arm_B  pos_fold
+group                                                                                          
+LONP1                   0.031                0.96              0.54              0.50    30.631
+literature              0.031                0.15              0.07              0.07     4.655
+random                  0.030                0.21              0.08              0.08     6.509
+systematic              0.025                0.62              0.12              0.12    24.756
+
+2. RETENTION by group (medians). ORA = top-100 partners; GSEA = genome-wide ranking
+            ora_n_sig_raw  ora_n_sig_B  ora_retention_A  ora_retention_B  gsea_top10_overlap_A  gsea_top10_overlap_B
+group                                                                                                               
+LONP1                30.0         18.0             0.50             0.30                   0.8                   0.8
+literature           37.0         93.0             1.00             1.00                   0.9                   0.9
+random                5.5         13.0             1.00             1.00                   0.9                   0.8
+systematic            1.0          7.0             0.79             0.82                   0.8                   0.8
+
+   same, split by positional class
+            ora_top_same_arm  ora_n_sig_raw  ora_n_sig_B  ora_retention_B  gsea_top10_overlap_B
+positional                                                                                     
+dominant                0.63            1.0          8.5              0.7                   0.7
+enriched                0.23            4.5         12.0              1.0                   0.8
+none                    0.05           22.0         21.0              1.0                   0.8
+
+   seeds whose raw top-100 partners give NO significant gene set (FDR<0.05), by positional class
+no_raw_ORA  False  True  All
+positional                  
+dominant       64    54  118
+enriched       44    28   72
+none           46    15   61
+All           154    97  251
+
+3. SPECIFICITY: class by group
+class       no robust program  seed-specific  shared module  All
+group                                                           
+LONP1                       0              0              1    1
+literature                  0              5             25   30
+random                      4             12             84  100
+systematic                  2             15            103  120
+All                         6             32            213  251
+
+   medians by group
+            Tstar_z_seed  Tstar_AUC_seed  peer_median_AUC  specificity_pct
+group                                                                     
+LONP1             21.379           0.853            0.847           56.667
+literature        13.512           0.775            0.777           68.333
+random            10.874           0.710            0.700           66.667
+systematic        11.347           0.731            0.773           58.333
+   chance rate of 'seed-specific' if a seed were exchangeable with its peers: about 10% (percentile >= 90 among 30 peers), before the AUC-difference requirement
+   literature vs random, seed-specific: 5/30 vs 12/100; Fisher P=0.541
+   literature vs random, specificity_pct: medians 68.333 vs 66.667; Mann-Whitney P=0.662
+   literature vs random, Tstar_z_seed: medians 13.512 vs 10.874; Mann-Whitney P=0.006
+   literature vs random, top50_same_arm_raw: medians 0.150 vs 0.210; Mann-Whitney P=0.337
+   literature vs random, ora_retention_B: medians 1.000 vs 1.000; Mann-Whitney P=0.238
+
+most frequent top deconfounded program (T*) across all seeds
+Tstar
+REACTOME_TRANSLATION                                                       59
+GOBP_CILIUM_ORGANIZATION                                                   26
+HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION                                 19
+HALLMARK_MITOTIC_SPINDLE                                                   19
+HALLMARK_E2F_TARGETS                                                       13
+GOBP_SKIN_DEVELOPMENT                                                      12
+HALLMARK_INTERFERON_GAMMA_RESPONSE                                          7
+GOBP_IMMUNE_RESPONSE_REGULATING_CELL_SURFACE_RECEPTOR_SIGNALING_PATHWAY     7
+HALLMARK_G2M_CHECKPOINT                                                     7
+GOBP_KERATINOCYTE_DIFFERENTIATION                                           7
+REACTOME_RESPIRATORY_ELECTRON_TRANSPORT                                     6
+GOBP_GLYCOPROTEIN_BIOSYNTHETIC_PROCESS                                      6
+
+literature seeds + LONP1
+          cytoband  top50_same_arm_raw  top50_same_arm_B positional  ora_n_sig_raw  ora_retention_B                                                                              Tstar  Tstar_AUC_seed  peer_median_AUC  specificity_pct          class
+gene                                                                                                                                                                                                                                                   
+IDO1       8p11.21                0.00              0.00       none            342            1.000                                                 HALLMARK_INTERFERON_GAMMA_RESPONSE           0.910            0.851           96.667  seed-specific
+CD3G       11q23.3                0.10              0.08       none            226            1.000                                                 HALLMARK_INTERFERON_GAMMA_RESPONSE           0.886            0.849           70.000  shared module
+PLA2G2D    1p36.12                0.04              0.02       none            250            1.000            GOBP_IMMUNE_RESPONSE_REGULATING_CELL_SURFACE_RECEPTOR_SIGNALING_PATHWAY           0.728            0.591           66.667  shared module
+SLC24A3   20p11.23                0.02              0.02       none             42            1.000                                 GOBP_EXTERNAL_ENCAPSULATING_STRUCTURE_ORGANIZATION           0.718            0.652           83.333  shared module
+RRM2        2p25.1                0.06              0.02       none            192            1.000                                                               HALLMARK_E2F_TARGETS           0.928            0.756          100.000  seed-specific
+MPC1          6q27                0.24              0.02   enriched              0              NaN                                            REACTOME_RESPIRATORY_ELECTRON_TRANSPORT           0.816            0.877           23.333  shared module
+SLC30A1     1q32.3                0.04              0.10       none              6            0.167                                             GOBP_GLYCOPROTEIN_BIOSYNTHETIC_PROCESS           0.645            0.553           90.000  seed-specific
+SLC30A10      1q41                0.06              0.00       none              8            0.750                                                              GOBP_SKIN_DEVELOPMENT           0.687            0.539           73.333  shared module
+S1PR2      19p13.2                0.18              0.12   enriched              0              NaN  REACTOME_IMMUNOREGULATORY_INTERACTIONS_BETWEEN_A_LYMPHOID_AND_A_NON_LYMPHOID_CELL           0.700            0.841           13.333  shared module
+CDC45     22q11.21                0.30              0.08   enriched            194            1.000                                                               REACTOME_TRANSLATION           0.837            0.861           23.333  shared module
+SLC7A11     4q28.3                0.10              0.04       none             10            0.900                                                          HALLMARK_MTORC1_SIGNALING           0.732            0.613           86.667  shared module
+GJA1       6q22.31                0.02              0.02       none             29            1.000                                                              GOBP_SKIN_DEVELOPMENT           0.724            0.667           96.667  seed-specific
+ESM1        5q11.2                0.12              0.08       none            191            1.000                                         HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION           0.825            0.811           60.000  shared module
+DHCR7      11q13.4                0.30              0.08   enriched             32            1.000                                                            HALLMARK_MYC_TARGETS_V1           0.805            0.821           46.667  shared module
+GALNT2     1q42.13                0.20              0.06   enriched            157            0.900                                         HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION           0.778            0.795           43.333  shared module
+RPS27A      2p16.1                0.04              0.02       none             63            1.000                                                               REACTOME_TRANSLATION           0.895            0.852           96.667  shared module
+NUSAP1     15q15.1                0.42              0.14   enriched            179            1.000                                                               HALLMARK_E2F_TARGETS           0.873            0.783           83.333  shared module
+GSS       20q11.22                0.62              0.12   dominant              3            0.000                                                               REACTOME_TRANSLATION           0.729            0.868            0.000  shared module
+TPM3        1q21.3                0.80              0.12   dominant              0              NaN                                                            HALLMARK_MYC_TARGETS_V1           0.862            0.824           60.000  shared module
+CNKSR2     Xp22.12                0.06              0.04       none              0              NaN                                                           GOBP_CILIUM_ORGANIZATION           0.634            0.575           83.333  shared module
+TMEM33        4p13                1.00              0.10   dominant              0              NaN                                                               REACTOME_TRANSLATION           0.720            0.822           40.000  shared module
+CBX7       22q13.1                0.12              0.08       none              0              NaN                                    REACTOME_PHASE_I_FUNCTIONALIZATION_OF_COMPOUNDS           0.657            0.566           76.667  shared module
+KIF14       1q32.1                0.40              0.08   enriched             84            1.000                                                            HALLMARK_G2M_CHECKPOINT           0.773            0.725           60.000  shared module
+MCM3        6p12.2                0.50              0.10   dominant             92            1.000                                                               HALLMARK_E2F_TARGETS           0.801            0.772           60.000  shared module
+P4HA2       5q31.1                0.62              0.12   dominant             24            1.000                                         HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION           0.786            0.815           43.333  shared module
+TFRC          3q29                0.64              0.04   dominant             45            0.800                                                            HALLMARK_G2M_CHECKPOINT           0.741            0.671           70.000  shared module
+TCP11      6p21.31                0.00              0.00       none             12            1.000                                                           GOBP_CILIUM_ORGANIZATION           0.605            0.603           53.333  shared module
+SMYD2       1q32.3                0.82              0.06   dominant              5            0.600                                                               REACTOME_TRANSLATION           0.850            0.863           40.000  shared module
+SPP1        4q22.1                0.00              0.00       none            243            1.000                                                  REACTOME_NEUTROPHIL_DEGRANULATION           0.680            0.601           86.667  shared module
+RFC5      12q24.23                0.54              0.22   dominant            199            1.000                                                               HALLMARK_E2F_TARGETS           0.879            0.748           90.000  seed-specific
+LONP1      19p13.3                0.96              0.50   dominant             30            0.300                                                               REACTOME_TRANSLATION           0.853            0.847           56.667  shared module
+
+total time 483 s

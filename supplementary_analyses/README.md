@@ -1,6 +1,6 @@
-# Supplementary analyses (V1.3.0)
+# Supplementary analyses (V1.4.0)
 
-Code and derived result tables for the three analyses added in revision:
+Code and derived result tables for the analyses added in revision (01–04 in V1.3.0; 06–07 in V1.4.0):
 
 | Folder | Analysis | Manuscript |
 |---|---|---|
@@ -8,8 +8,12 @@ Code and derived result tables for the three analyses added in revision:
 | `02_partial_correlation/` | Copy-number- and purity-adjusted (partial Spearman) LONP1 co-expression in TCGA-CESC; fgsea | Fig. 4H–J |
 | `03_MR_coloc/` | cis-eQTL Mendelian randomization and colocalization for LONP1 and 15 partner genes | Additional file 2: Figs. S7–S8; Tables S11–S12 |
 | `04_assembly/` | Assembly of the new figure panels and Additional files 1–2; Supplementary Methods text | Additional files 1–2 |
+| `06_control_genes/` | Specificity of the LONP1 co-expression program against control seed genes: all 19p13.3 genes (26 expression- and dosage-matched non-mitochondrial controls), 29 mitochondrial genes on other chromosomes, 300 expression-matched random genes; gene-set AUCs for raw, model A and model B (n=240) correlations | Results "The mitochondrial co-expression program is not positional…"; Table S16 |
+| `07_generalization/` | The same pipeline applied to 251 seeds (LONP1, 30 literature genes, 120 dosage-sensitive genes, 100 random genes): positional dominance, retention after copy-number/purity adjustment, specificity against 30 peers; LONP1 rank on all gene sets | Same Results section; Tables S17A–B |
 
-All scripts take input/output directories as command-line arguments (see the usage line at the top of each script); no paths are hard-coded. Comments in the scripts are partly in Chinese.
+Scripts in 01–04 take input/output directories as command-line arguments (see the usage line at the top of each script). Comments in the scripts are partly in Chinese.
+
+**06 and 07** locate their inputs relative to the script when run without arguments (`python -I 01_control_genes.py`, `python -I 01_generalize.py`), and write results into their own folder (`06_control_genes/`, `07_generalization/results_v2/`). They expect, under a common parent folder: `supplementary_analyses/02_partial_correlation/data/` holding the cBioPortal files `data_mrna_seq_v2_rsem.txt`, `data_log2_cna.txt`, `data_cna.txt` and `data_armlevel_cna.txt` (study `cesc_tcga_pan_can_atlas_2018`; not redistributed), and a sibling folder containing `raw_data/30_coexpression_LONP1_CESC_genomewide.csv` and `raw_data/_cache/TCGA_mastercalls.abs_tables_JSedit.fixed.txt` (both are in `data/` of this repository; copy them to such a `raw_data/` folder). `01_control_genes.py` also accepts explicit paths: `<02_partial_correlation dir> <dir containing raw_data/> <output dir> [genesets.gmt]`. Gene sets are exported from MSigDB with `00_dump_genesets.R` / `00_dump_genesets_all.R` (msigdbr 26.1.1) and are not redistributed. `literature_genes.csv` lists the 30 literature genes with their source articles.
 
 ## Data (not redistributed; download from the original sources)
 
@@ -35,7 +39,13 @@ python3 01_fetch_regions.py ; python -P 02_harmonize_mr.py ; python -P 02b_neigh
 Rscript 03_coloc.R ; python -P 05_combine_mr.py ; Rscript 07_MR_package_crosscheck.R ; python -P 04_figures_LONP1.py ; python -P 06_figures_allgenes.py
 # 04 assembly
 python -P build_main_figures.py
+# 06 control genes (run inside 06_control_genes/)
+Rscript 00_dump_genesets.R genesets_selected.gmt ; python -I 01_control_genes.py
+# 07 generalization (run inside 07_generalization/; add --quick for a short test run)
+Rscript 00_dump_genesets_all.R genesets_all.gmt ; python -I 01_generalize.py
 ```
+
+06 and 07 were run with Python 3.11.9 (numpy 2.4.6, pandas 3.1.1, scipy 1.17.1) and R 4.6.2 (msigdbr 26.1.1). On Windows, `RUN_*.bat` performs the same steps.
 
 `03_infercnv.py` and `01_partial_spearman.py` additionally read gene coordinates / TCGA tables produced by the main analysis (`data/` in this repository).
 
